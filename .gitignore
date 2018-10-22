@@ -1,2 +1,4 @@
-.idea
-*sublime-workspace
+/build_local/
+/node_modules/
+/vendor/
+/.idea/
