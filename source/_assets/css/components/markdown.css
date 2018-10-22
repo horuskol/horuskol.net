@@ -1,0 +1,7 @@
+.markdown h1 {
+  @apply mb-4;
+}
+
+.markdown p {
+  @apply leading-normal;
+}
