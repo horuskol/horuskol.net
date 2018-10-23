@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => '',
+    'baseUrl' => 'http://horuskol.net',
     'production' => false,
     'collections' => [
         'posts' => [
