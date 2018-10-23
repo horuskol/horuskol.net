@@ -810,6 +810,29 @@ Source: https://github.com/highlightjs/highlight.js/blob/master/src/styles/andro
   font-weight: bold;
 }
 
+.social-icon:before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url(../images/social-icons.svg) no-repeat 0 0;
+  background-size: 5em;
+  font-size: 1.333em;
+  margin-right: .1em;
+}
+
+.social-icon.facebook:before {
+  background-position: -0.2em -0.2em;
+}
+
+.social-icon.twitter:before {
+  background-position: -1.9em -0.2em;
+}
+
+.social-icon.linkedin:before {
+  background-position: -0.2em -1.3em;
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.

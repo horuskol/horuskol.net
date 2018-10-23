@@ -33,20 +33,20 @@
                 @yield('content')
             </div>
 
-            <footer style="border-radius: 0% 0% 2rem 100% / 0% 0% 100% 100%;" class="ml-3 mr-3 pt-2 pb-2 bg-blue-lighter text-right">
+            <footer style="border-radius: 0% 0% 4rem 100% / 0% 0% 100% 100%;" class="ml-3 mr-3 mb-8 pt-2 pb-2 bg-blue-lighter text-right">
                 <ul>
                     <li class="inline-block mr-4">
-                        <a href="https://twitter.com/horus_kol" class="text-blue-dark hover:text-blue-darker no-underline">twitter</a>
+                        <a href="https://twitter.com/horus_kol" class="text-blue-dark hover:text-blue-darker no-underline social-icon twitter">twitter</a>
                     </li>
                     <li class="inline-block mr-4">
-                        <a href="https://www.facebook.com/horuskol" class="text-blue-dark hover:text-blue-darker no-underline">facebook</a>
+                        <a href="https://www.facebook.com/horuskol" class="text-blue-dark hover:text-blue-darker no-underline social-icon facebook">facebook</a>
                     </li>
                     <li class="inline-block mr-4">
-                        <a href="https://www.linkedin.com/in/horuskol/" class="text-blue-dark hover:text-blue-darker no-underline">linkedin</a>
+                        <a href="https://www.linkedin.com/in/horuskol/" class="text-blue-dark hover:text-blue-darker no-underline social-icon linkedin">linkedin</a>
                     </li>
                 </ul>
 
-                <p class="pt-4 mr-4">
+                <p class="pt-4 mr-8">
                     &copy; Stuart Jones
                 </p>
             </footer>
