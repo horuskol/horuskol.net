@@ -9,13 +9,13 @@
         <title>HorusKol: The Blog</title>
     </head>
 
-    <body class="border-t-6 border-indigo bg-grey-lightest text-black">
+    <body class="max-w-lg border-t-6 ml-auto mr-auto border-indigo bg-grey-lightest text-black">
         <header class="pb-4">
-            <h1 class="mt-4 ml-10">HorusKol: The Blog</h1>
+            <h1 class="mt-4 ml-10"><a href="/" class="no-underline text-black hover:bg-grey">HorusKol: The Blog</a></h1>
             <h2 class="mt-4 ml-10 mr-25pc">Adventures and musings in the world of web development</h2>
         </header>
 
-        <div style="border-radius: 2rem 50% 0% 0% / 100% 100% 0% 0%;" class="h-8 min-h-0 ml-3 mr-3 pt-2 pb-2 bg-indigo-lighter">
+        <div style="border-radius: 2rem 25% 0% 0% / 100% 100% 0% 0%;" class="h-8 min-h-0 ml-3 mr-3 pt-2 pb-2 bg-indigo-lighter">
             {{--<nav>--}}
                 {{--<ul>--}}
                     {{--<li class="inline-block"><a href="/" class="text-grey-darkest">Home</a></li>--}}
@@ -23,11 +23,11 @@
             {{--</nav>--}}
         </div>
 
-        <div class="m-10 max-w-sm min-h-screen-half markdown">
+        <div class="ml-3 mr-3 pl-10 pr-10 min-h-screen-half bg-grey-lighter">
             @yield('content')
         </div>
 
-        <div style="border-radius: 0% 0% 2rem 50% / 0% 0% 100% 100%;" class="h-8 ml-3 mr-3 bg-indigo-lighter"></div>
+        <div style="border-radius: 0% 0% 2rem 25% / 0% 0% 100% 100%;" class="h-8 ml-3 mr-3 bg-indigo-lighter"></div>
 
         <footer class="m-4 mr-8 mb-8 text-right">
             <ul>

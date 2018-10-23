@@ -1,7 +1,27 @@
 .markdown h1 {
-  @apply mb-4;
+  @apply pt-8 pb-4;
+}
+
+.markdown h2 {
+  @apply pt-8 pb-4 text-grey-darkest;
+}
+
+.markdown h3 {
+  @apply pt-8 pb-4 text-grey-darker;
 }
 
 .markdown p {
-  @apply leading-normal;
+  @apply pb-4 leading-normal;
+}
+
+.markdown code {
+  @apply font-semibold;
+}
+
+.markdown pre {
+  @apply mb-4 max-h-20 max-w-full p-2 overflow-auto bg-grey-darkest text-grey-lightest leading-normal;
+}
+
+.markdown pre code {
+  @apply font-normal;
 }

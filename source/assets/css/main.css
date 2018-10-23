@@ -680,11 +680,44 @@ table {
  */
 
 .markdown h1 {
-  margin-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.markdown h2 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: #3d4852;
+}
+
+.markdown h3 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: #606f7b;
 }
 
 .markdown p {
+  padding-bottom: 1rem;
   line-height: 1.5;
+}
+
+.markdown code {
+  font-weight: 600;
+}
+
+.markdown pre {
+  margin-bottom: 1rem;
+  max-height: 20rem;
+  max-width: 100%;
+  padding: .5rem;
+  overflow: auto;
+  background-color: #3d4852;
+  color: #f8fafc;
+  line-height: 1.5;
+}
+
+.markdown pre code {
+  font-weight: 400;
 }
 
 /**
@@ -3821,6 +3854,14 @@ table {
 
 .ml-px {
   margin-left: 1px;
+}
+
+.max-h-10 {
+  max-height: 10rem;
+}
+
+.max-h-20 {
+  max-height: 20rem;
 }
 
 .max-h-full {
@@ -9511,6 +9552,14 @@ table {
     margin-left: 1px;
   }
 
+  .sm\:max-h-10 {
+    max-height: 10rem;
+  }
+
+  .sm\:max-h-20 {
+    max-height: 20rem;
+  }
+
   .sm\:max-h-full {
     max-height: 100%;
   }
@@ -15167,6 +15216,14 @@ table {
 
   .md\:ml-px {
     margin-left: 1px;
+  }
+
+  .md\:max-h-10 {
+    max-height: 10rem;
+  }
+
+  .md\:max-h-20 {
+    max-height: 20rem;
   }
 
   .md\:max-h-full {
@@ -20827,6 +20884,14 @@ table {
     margin-left: 1px;
   }
 
+  .lg\:max-h-10 {
+    max-height: 10rem;
+  }
+
+  .lg\:max-h-20 {
+    max-height: 20rem;
+  }
+
   .lg\:max-h-full {
     max-height: 100%;
   }
@@ -26483,6 +26548,14 @@ table {
 
   .xl\:ml-px {
     margin-left: 1px;
+  }
+
+  .xl\:max-h-10 {
+    max-height: 10rem;
+  }
+
+  .xl\:max-h-20 {
+    max-height: 20rem;
   }
 
   .xl\:max-h-full {
