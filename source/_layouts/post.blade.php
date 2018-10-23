@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="markdown">
-    @yield('markdown')
+    <h1>{{ $page->title }}</h1>
+    @yield('post')
 </div>
 @endsection

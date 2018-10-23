@@ -1,12 +1,10 @@
 ---
-extends: _layouts.markdown
+extends: _layouts.post
 title: It begins
 author: Stuart Jones
 date: 2018-10-22
-section: markdown
+section: post
 ---
-
-# It begins
 
 (again)
 

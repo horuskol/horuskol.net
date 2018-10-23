@@ -688,6 +688,8 @@ table {
   padding-top: 2rem;
   padding-bottom: 1rem;
   color: #3d4852;
+  border-color: #3d4852;
+  border-top-width: 1px;
 }
 
 .markdown h3 {

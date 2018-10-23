@@ -1,12 +1,10 @@
 ---
-extends: _layouts.markdown
-title: Getting Tailwind into Jigsaw
+extends: _layouts.post
+title: Getting Tailwind CSS into Jigsaw
 author: Stuart Jones
 date: 2018-10-23
-section: markdown
+section: post
 ---
-
-# Getting Tailwind into Jigsaw
 
 This site is powered by the static site generator [Jigsaw](http://jigsaw.tighten.co/),
 and uses the [Tailwind](https://tailwindcss.com/) utility-first CSS framework.

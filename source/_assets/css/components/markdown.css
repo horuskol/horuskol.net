@@ -3,7 +3,7 @@
 }
 
 .markdown h2 {
-  @apply pt-8 pb-4 text-grey-darkest;
+  @apply pt-8 pb-4 text-grey-darkest border-grey-darkest border-t;
 }
 
 .markdown h3 {
