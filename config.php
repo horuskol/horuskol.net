@@ -14,7 +14,7 @@ return [
                 array_splice($words, $wordLength);
 
                 return implode(" ", $words);
-            },
+            }
         ]
     ],
 ];

@@ -719,6 +719,22 @@ table {
   font-weight: 400;
 }
 
+.markdown a {
+  color: #3490dc;
+  text-decoration: none;
+}
+
+.markdown a:hover {
+  color: #1c3d5a;
+  text-decoration: none;
+}
+
+.markdown hr {
+  border-color: #b8c2cc;
+  border-top-width: 2px;
+  padding-bottom: 1rem;
+}
+
 /*
 Date: 24 Fev 2015
 Author: Pedro Oliveira <kanytu@gmail . com>

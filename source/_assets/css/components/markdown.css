@@ -25,3 +25,15 @@
 .markdown pre code {
   @apply font-normal;
 }
+
+.markdown a {
+  @apply text-blue no-underline;
+}
+
+.markdown a:hover {
+  @apply text-blue-darker no-underline;
+}
+
+.markdown hr {
+  @apply border-grey border-t-2 pb-4;
+}
