@@ -19,7 +19,7 @@
 }
 
 .markdown pre {
-  @apply mb-4 max-h-20 max-w-full p-2 overflow-auto bg-grey-darkest text-grey-lightest leading-normal;
+  @apply mb-4 max-h-20 w-full overflow-auto leading-normal;
 }
 
 .markdown pre code {

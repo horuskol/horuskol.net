@@ -92,8 +92,11 @@ I also introduced a `source/_assets/css/components/markdown.css` file to let me 
 I use to write my blog posts.
 
 ```css
+/**
+ * define markdown styling using tailwind utility classes
+ */
 .markdown h1 {
-  @apply mb-4; // define markdown styling using tailwind utility classes
+  @apply mb-4;
 }
 
 .markdown p {
