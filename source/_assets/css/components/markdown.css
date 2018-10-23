@@ -37,3 +37,9 @@
 .markdown hr {
   @apply border-grey border-t-2 pb-4;
 }
+
+.markdown img {
+  max-height: 10em;
+  max-width: 10em;
+  float: right;
+}

@@ -735,6 +735,12 @@ table {
   padding-bottom: 1rem;
 }
 
+.markdown img {
+  max-height: 10em;
+  max-width: 10em;
+  float: right;
+}
+
 /*
 Date: 24 Fev 2015
 Author: Pedro Oliveira <kanytu@gmail . com>

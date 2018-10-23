@@ -1,7 +1,7 @@
 ---
-extends: _layouts.post
+extends: _layouts.page
 title: About
-section: post
+section: page
 ---
 
 I'm a web application developer and the founder of [Savvy Wombat](https://savvywombat.com.au).
