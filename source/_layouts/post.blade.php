@@ -11,6 +11,10 @@
             <a href="{{ $page->getNext()->getPath() }}" class="text-blue-dark hover:text-blue-darker no-underline">&lt;&lt; {{  $page->getNext()->title }}</a>
         @endif
 
+        @if ($page->getNext() && $page->getPrevious())
+            <span class="ml-8 mr-8"></span>
+        @endif
+
         @if ($page->getPrevious())
             <a href="{{ $page->getPrevious()->getPath() }}" class="text-blue-dark hover:text-blue-darker no-underline">{{  $page->getPrevious()->title }} >></a>
         @endif
