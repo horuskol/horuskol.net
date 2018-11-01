@@ -32,6 +32,16 @@
         @else
             <title>HorusKol</title>
         @endif
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128485347-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-128485347-2');
+        </script>
     </head>
 
     <body class=" border-blue-light border-t-8 bg-grey-lightest text-black">
