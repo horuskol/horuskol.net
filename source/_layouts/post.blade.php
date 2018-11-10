@@ -9,7 +9,9 @@
     @if ($page->description)
         <meta property="twitter:description" content="{{ $page->description }}">
     @endif
-    <meta property="twitter:image" content="{{ $page->image ? $page->image : '/assets/images/software-development-ring.png' }}" />
+    @if ($page->image)
+        <meta property="twitter:image" content="{{ $page->image }}" />
+    @endif
     @if ($page->imageDescription)
         <meta property="twitter:image:alt" content="{{ $page->imageDescription }}">
     @endif
