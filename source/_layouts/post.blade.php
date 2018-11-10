@@ -12,9 +12,7 @@
         <meta property="og:description" content="{{ $page->description }}">
     @endif
 
-    @if ($page->image)
-        <meta property="og:image" content="{{ $page->image }}" />
-    @endif
+    <meta property="og:image" content="{{ $page->image ? $page->image : '/assets/images/software-development-ring.png' }}" />
 @endsection
 
 @section('content')
