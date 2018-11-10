@@ -5,12 +5,15 @@
     <meta name="twitter:site" content="@horuskol">
     <meta name="twitter:creator" content="@horuskol">
 
-    <meta property="og:url" content="{{ $post->getPath() }}">
-    <meta property="og:title" content="{{ $post->title }}">
-    <meta property="og:description" content="{{ $post->excerpt() }}">
+    <meta property="og:url" content="{{ $page->getPath() }}">
+    <meta property="og:title" content="{{ $page->title }}">
 
-    @if ($post->image)
-        <meta property="og:image" content="{{ $post->image }}" />
+    @if ($page->description)
+        <meta property="og:description" content="{{ $page->description }}">
+    @endif
+
+    @if ($page->image)
+        <meta property="og:image" content="{{ $page->image }}" />
     @endif
 @endsection
 
