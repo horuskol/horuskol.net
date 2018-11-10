@@ -4,15 +4,15 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@horuskol">
     <meta name="twitter:creator" content="@horuskol">
-
-    <meta property="og:url" content="{{ $page->getPath() }}">
-    <meta property="og:title" content="{{ $page->title }}">
-
+    <meta property="twitter:url" content="{{ $page->getPath() }}">
+    <meta property="twitter:title" content="{{ $page->title }}">
     @if ($page->description)
-        <meta property="og:description" content="{{ $page->description }}">
+        <meta property="twitter:description" content="{{ $page->description }}">
     @endif
-
-    <meta property="og:image" content="{{ $page->image ? $page->image : '/assets/images/software-development-ring.png' }}" />
+    <meta property="twitter:image" content="{{ $page->image ? $page->image : '/assets/images/software-development-ring.png' }}" />
+    @if ($page->imageDescription)
+        <meta property="twitter:image:alt" content="{{ $page->imageDescription }}">
+    @endif
 @endsection
 
 @section('content')
