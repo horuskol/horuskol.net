@@ -25,6 +25,8 @@
         <meta name="msapplication-TileColor" content="#bcdefa">
         <meta name="msapplication-TileImage" content="/assets/images/favicon/ms-icon-144x144.png">
 
+        @yield('meta')
+
         <link rel="stylesheet" href="{{ mix('css/main.css') }}">
 
         @if ($page->title)

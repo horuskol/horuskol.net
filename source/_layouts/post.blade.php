@@ -1,5 +1,19 @@
 @extends('_layouts.master')
 
+@section('meta')
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@horuskol">
+    <meta name="twitter:creator" content="@horuskol">
+
+    <meta property="og:url" content="{{ $post->getPath() }}">
+    <meta property="og:title" content="{{ $post->title }}">
+    <meta property="og:description" content="{{ $post->excerpt() }}">
+
+    @if ($post->image)
+        <meta property="og:image" content="{{ $post->image }}" />
+    @endif
+@endsection
+
 @section('content')
 <article class="markdown">
     <h1>{{ $page->title }}</h1>
