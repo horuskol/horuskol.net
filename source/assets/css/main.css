@@ -741,6 +741,30 @@ table {
   float: right;
 }
 
+.markdown figure {
+  background-color: #bcdefa;
+  margin-bottom: .75rem;
+  margin-left: .75rem;
+  padding: .25rem;
+  text-align: center;
+}
+
+.markdown figure {
+  max-width: 50%;
+  float: right;
+}
+
+.markdown figure img {
+  max-height: 100%;
+  max-width: 100%;
+  float: none;
+}
+
+.markdown figure figcaption {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
 /*
 Date: 24 Fev 2015
 Author: Pedro Oliveira <kanytu@gmail . com>
