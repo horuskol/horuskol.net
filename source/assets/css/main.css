@@ -834,6 +834,17 @@ Source: https://github.com/highlightjs/highlight.js/blob/master/src/styles/andro
   font-weight: bold;
 }
 
+.presentation {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.presentation h1 {
+  text-align: center;
+  margin-top: .5rem;
+  margin-top: 1rem;
+}
+
 .social-icon:before {
   content: '';
   display: inline-block;

@@ -1,0 +1,8 @@
+.presentation {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.presentation h1 {
+  @apply text-center mt-2 mt-4;
+}
