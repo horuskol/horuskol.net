@@ -1,8 +1,26 @@
 .presentation {
   width: 1000px;
+  height: 600px;
   margin: 0 auto;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1em;
 }
 
-.presentation h1 {
-  @apply text-center mt-2 mt-4;
+.presentation:hover {
+  cursor: pointer;
+}
+
+.presentation > :not(ul) {
+  flex-grow: 1;
+  max-height: 3em;
+  overflow: hidden;
+}
+
+.presentation > ul {
+  flex-grow: 0;
+  padding-bottom: 2em;
 }
