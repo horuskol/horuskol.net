@@ -1857,18 +1857,35 @@ process.umask = function() { return 0; };
 
 var axios = __webpack_require__("./node_modules/axios/index.js");
 
+var nextElement = null;
+
 document.getElementById("presentation-slide").addEventListener('click', function (event) {
     var target = document.getElementById("presentation-slide");
 
-    slideIndex++;
-    if (slideUrls[slideIndex]) {
-        axios.get(slideUrls[slideIndex]).then(function (response) {
-            console.log(target);
-            target.innerHTML = response.data;
-        }, function (response) {
-            console.log(response);
-        });
-    };
+    if (null === nextElement) {
+        slideIndex++;
+        if (slideUrls[slideIndex]) {
+            axios.get(slideUrls[slideIndex]).then(function (response) {
+                var buffer = document.createElement('div');
+                buffer.innerHTML = response.data;
+
+                buffer.childNodes.forEach(function (node) {
+                    if (node.nodeType === Node.ELEMENT_NODE) {
+                        node.classList.add('invisible');
+                    }
+                });
+
+                target.innerHTML = buffer.innerHTML;
+                target.firstElementChild.classList.remove('invisible');
+                nextElement = target.firstElementChild.nextElementSibling;
+            }, function (response) {
+                console.error(response);
+            });
+        }
+    } else {
+        nextElement.classList.remove('invisible');
+        nextElement = nextElement.nextElementSibling;
+    }
 }, { capture: true });
 
 /***/ }),

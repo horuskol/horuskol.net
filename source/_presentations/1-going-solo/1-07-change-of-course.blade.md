@@ -18,4 +18,6 @@ Dropped contracting
 
 Changed focus to business and product development
 
-Still working full-time at AMH - still working evenings and weekends, too
+Still working full-time at AMH
+
+Still working evenings and weekends, too

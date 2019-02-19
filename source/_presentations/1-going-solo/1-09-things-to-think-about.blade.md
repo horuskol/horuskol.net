@@ -14,4 +14,4 @@ Do you think you have the skills to build those products?
 
 Can you afford to live on savings for an elongated period of time?
 
-(And your Super will take a bashing).
+(And your Super will take a bashing)

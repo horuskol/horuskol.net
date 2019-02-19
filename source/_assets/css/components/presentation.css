@@ -19,9 +19,13 @@
   overflow: hidden;
 }
 
-.presentation > ul {
+.presentation > h1 {
   flex-grow: 0;
-  padding-bottom: 3em;
+  padding-bottom: 1em;
+}
+
+.presentation > ul {
+  flex-grow: 1;
 }
 
 .presentation p,

@@ -6,13 +6,15 @@ author: Stuart Jones
 date: 2019-02-21
 ---
 
-# Brief History
+# Brief history
 
 ### 2007
 
-Came to Australia - became a full-time developer at I-Nex
+Came to Australia
+ 
+Full-time developer at I-Nex
 
-Developed for clients
+Developing sites and applications for clients
 
 * Membership and subscription management
 * Content management
