@@ -45,3 +45,24 @@
   text-indent: -2em;
   padding-left: 2em;
 }
+
+.presentation-footer {
+  position: fixed;
+  bottom: 0;
+  left: calc(50% - 500px);
+  width: 1000px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
+  .presentation {
+    width: 100%;
+    min-height: 75%;
+
+    font-size: 1em;
+  }
+
+  .presentation-footer {
+    position: static;
+    width: 100%;
+  }
+}

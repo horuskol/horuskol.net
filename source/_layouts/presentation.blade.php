@@ -62,7 +62,7 @@
         @yield('presentation')
     </div>
 
-    <footer style="position: fixed; bottom: 0; left: calc(50% - 500px); width: 1000px;">
+    <footer class="presentation-footer">
         <p class="text-right m-4">{{ date('F j, Y', $page->date) }} &copy; Stuart Jones</p>
     </footer>
 </body>
