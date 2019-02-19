@@ -16,11 +16,20 @@
 
 .presentation > :not(ul) {
   flex-grow: 1;
-  max-height: 3em;
   overflow: hidden;
 }
 
 .presentation > ul {
   flex-grow: 0;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
+}
+
+.presentation p,
+.presentation li {
+  line-height: 1.5;
+}
+
+.presentation p {
+  text-indent: -2em;
+  padding-left: 2em;
 }

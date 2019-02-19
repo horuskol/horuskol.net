@@ -29,8 +29,8 @@
 
     <link rel="stylesheet" href="{{ mix('css/main.css') }}">
 
-    @if ($page->title)
-        <title>HorusKol - {{ $page->title }}</title>
+    @if ($page->presentation)
+        <title>HorusKol - {{ $page->presentation }}</title>
     @else
         <title>HorusKol</title>
 @endif
@@ -55,10 +55,10 @@
     </nav>
 
     <header class="text-center">
-        <h1 class="m-4 text-4xl">{{ $page->title }}</h1>
+        <h1 class="m-4 text-4xl">{{ $page->presentation }}</h1>
     </header>
 
-    <div class="presentation border-t-2">
+    <div id="presentation-slide" class="presentation border-2">
         @yield('presentation')
     </div>
 
@@ -66,4 +66,16 @@
         <p class="text-right m-4">{{ date('F j, Y', $page->date) }}</p>
     </footer>
 </body>
+
+<script type="text/javascript">
+    window.slideUrls = [];
+    window.slideIndex = 0;
+    <?php $current = $page; ?>
+    @while ($current && $current->presentation === $page->presentation)
+        window.slideUrls.push('{{ $current->getPath() }}');
+        <?php $current = $current->getNext(); ?>
+    @endwhile
+</script>
+
+<script type="text/javascript" src="/assets/js/presentation.js"></script>
 </html>
