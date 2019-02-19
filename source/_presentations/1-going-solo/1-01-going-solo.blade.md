@@ -8,3 +8,5 @@ section: presentation
 ---
 
 # Experiences of becoming a solopreneur (so far)
+
+https://viewcrafter.com

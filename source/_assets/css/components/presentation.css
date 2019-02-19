@@ -19,6 +19,14 @@
   overflow: hidden;
 }
 
+.presentation *.invisible {
+  visibility: hidden;
+  opacity: 0;
+  margin-left: -100px;
+
+  transition: visibility 1s, opacity 1s linear, margin-left 1s linear;
+}
+
 .presentation > h1 {
   flex-grow: 0;
   padding-bottom: 1em;

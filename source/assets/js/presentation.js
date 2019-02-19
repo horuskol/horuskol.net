@@ -1858,35 +1858,63 @@ process.umask = function() { return 0; };
 var axios = __webpack_require__("./node_modules/axios/index.js");
 
 var nextElement = null;
+var clicksOff = false;
 
 document.getElementById("presentation-slide").addEventListener('click', function (event) {
     var target = document.getElementById("presentation-slide");
+
+    if (clicksOff) {
+        return;
+    }
 
     if (null === nextElement) {
         slideIndex++;
         if (slideUrls[slideIndex]) {
             axios.get(slideUrls[slideIndex]).then(function (response) {
-                var buffer = document.createElement('div');
-                buffer.innerHTML = response.data;
-
-                buffer.childNodes.forEach(function (node) {
+                target.childNodes.forEach(function (node) {
                     if (node.nodeType === Node.ELEMENT_NODE) {
                         node.classList.add('invisible');
                     }
                 });
 
-                target.innerHTML = buffer.innerHTML;
-                target.firstElementChild.classList.remove('invisible');
-                nextElement = target.firstElementChild.nextElementSibling;
+                clicksOff = true;
+
+                setTimeout(function () {
+                    var buffer = document.createElement('div');
+                    buffer.innerHTML = response.data;
+
+                    buffer.childNodes.forEach(function (node) {
+                        if (node.nodeType === Node.ELEMENT_NODE) {
+                            node.classList.add('invisible');
+                        }
+                    });
+
+                    target.innerHTML = buffer.innerHTML;
+                    target.firstElementChild.classList.remove('invisible');
+                    nextElement = target.firstElementChild.nextElementSibling;
+
+                    clicksOff = false;
+                }, 1250);
             }, function (response) {
                 console.error(response);
             });
         }
-    } else {
+    }
+
+    if (nextElement) {
         nextElement.classList.remove('invisible');
         nextElement = nextElement.nextElementSibling;
     }
-}, { capture: true });
+});
+
+document.querySelectorAll(".presentation a").forEach(function (link) {
+    link.addEventListener("click", function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+
+        window.open(event.target.href, '');
+    });
+});
 
 /***/ }),
 
