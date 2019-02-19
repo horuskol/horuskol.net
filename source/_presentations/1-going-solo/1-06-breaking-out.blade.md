@@ -10,7 +10,7 @@ date: 2019-02-21
 
 ### 2016
 
-Created **<span style="color: #40485C">Savvy</span> <span style="color: #532E1B">Wombat</span>**
+Founded **<span style="color: #40485C">Savvy</span> <span style="color: #532E1B">Wombat</span>**
 
 Stayed on full-time at AMH
 

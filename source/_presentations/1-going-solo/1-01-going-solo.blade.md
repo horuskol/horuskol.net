@@ -9,4 +9,6 @@ section: presentation
 
 # Experiences of becoming a solopreneur (so far)
 
-https://viewcrafter.com
+
+<p class="mt-20 text-3xl">Stuart Jones<br />
+Founder of <span style="color: #40485C; font-weight: bold">Savvy</span> <span style="color: #532E1B; font-weight: bold">Wombat</span></p>

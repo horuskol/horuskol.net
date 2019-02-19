@@ -63,7 +63,7 @@
     </div>
 
     <footer style="position: fixed; bottom: 0; left: calc(50% - 500px); width: 1000px;">
-        <p class="text-right m-4">{{ date('F j, Y', $page->date) }}</p>
+        <p class="text-right m-4">{{ date('F j, Y', $page->date) }} &copy; Stuart Jones</p>
     </footer>
 </body>
 
