@@ -911,6 +911,15 @@ Source: https://github.com/highlightjs/highlight.js/blob/master/src/styles/andro
   }
 }
 
+@media only screen and (min-width : 1250px) {
+  .presentation {
+    width: 80%;
+    margin: 0 10%;
+    height: 80vh;
+    font-size: 2.5vh;
+  }
+}
+
 .social-icon:before {
   content: '';
   display: inline-block;

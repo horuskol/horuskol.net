@@ -66,3 +66,12 @@
     width: 100%;
   }
 }
+
+@media only screen and (min-width : 1250px) {
+  .presentation {
+    width: 80%;
+    margin: 0 10%;
+    height: 80vh;
+    font-size: 2.5vh;
+  }
+}
