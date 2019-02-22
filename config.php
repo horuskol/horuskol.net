@@ -15,6 +15,10 @@ return [
 
                 return implode(" ", $words);
             }
-        ]
+        ],
+        'presentations' => [
+            'path' => 'presentations/{date|Y-m-d}/{-presentation}/{filename}',
+            'sort' => 'filename',
+        ],
     ],
 ];

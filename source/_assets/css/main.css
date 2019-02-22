@@ -30,6 +30,7 @@
 
 @import "components/markdown";
 @import "components/code-highlighting";
+@import "components/presentation";
 @import "components/social-icons";
 
 /**

@@ -46,7 +46,7 @@
         </script>
     </head>
 
-    <body class=" border-blue-light border-t-8 bg-grey-lightest text-black">
+    <body class="border-blue-light border-t-8 bg-grey-lightest text-black">
         <div class="max-w-lg ml-auto mr-auto">
             <header class="pb-4">
                 <h1 class="mt-4 ml-5 md:ml-10"><a href="/" class="no-underline text-black hover:bg-grey">HorusKol</a></h1>
@@ -57,6 +57,7 @@
                 <nav>
                     <ul class="ml-5 sm:ml-10 p-0">
                         <li class="inline-block mr-4"><a href="/" class="text-blue-dark hover:text-blue-darker no-underline">Blog</a></li>
+                        <li class="inline-block mr-4"><a href="/presentations" class="text-blue-dark hover:text-blue-darker no-underline">Presentations</a></li>
                         <li class="inline-block"><a href="/about" class="text-blue-dark hover:text-blue-darker no-underline">About</a></li>
                     </ul>
                 </nav>

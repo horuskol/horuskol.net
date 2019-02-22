@@ -1,0 +1,77 @@
+.presentation {
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1em;
+}
+
+.presentation:hover {
+  cursor: pointer;
+}
+
+.presentation > :not(ul) {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.presentation *.invisible {
+  visibility: hidden;
+  opacity: 0;
+  margin-left: -100px;
+
+  transition: visibility 1s, opacity 1s linear, margin-left 1s linear;
+}
+
+.presentation > h1 {
+  flex-grow: 0;
+  padding-bottom: 1em;
+}
+
+.presentation > ul {
+  flex-grow: 1;
+}
+
+.presentation p,
+.presentation li {
+  line-height: 1.5;
+}
+
+.presentation p {
+  text-indent: -2em;
+  padding-left: 2em;
+}
+
+.presentation-footer {
+  position: fixed;
+  bottom: 0;
+  left: calc(50% - 500px);
+  width: 1000px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
+  .presentation {
+    width: 100%;
+    min-height: 75%;
+
+    font-size: 1em;
+  }
+
+  .presentation-footer {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width : 1250px) {
+  .presentation {
+    width: 80%;
+    margin: 0 10%;
+    height: 80vh;
+    font-size: 2.5vh;
+  }
+}
