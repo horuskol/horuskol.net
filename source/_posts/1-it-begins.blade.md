@@ -4,6 +4,7 @@ title: It begins
 author: Stuart Jones
 date: 2018-10-22
 section: post
+tags: []
 ---
 
 ![phoenix rising](/assets/images/phoenix.svg)
