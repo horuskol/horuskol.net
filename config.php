@@ -5,7 +5,7 @@ return [
     'production' => false,
     'collections' => [
         'posts' => [
-            'path' => 'blog/{date|Y-m-d}/{filename}',
+            'path' => 'blog/{date|Y-m-d}/{-title}',
             'sort' => '-date',
             'excerpt' => function ($page, $wordLength = 25) {
                 $strippedContent = strip_tags($page->getContent());
