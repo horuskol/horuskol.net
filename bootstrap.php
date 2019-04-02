@@ -2,6 +2,7 @@
 
 
 use App\Listeners\AddTagIndexes;
+use App\Listeners\GenerateSitemap;
 use App\ParsedownParser;
 use Mni\FrontYAML\Markdown\MarkdownParser;
 use TightenCo\Jigsaw\Jigsaw;
@@ -31,3 +32,5 @@ $container->bind(AddTagIndexes::class, function ($c) {
 $events->afterCollections(function (Jigsaw $jigsaw) use ($container) {
     $container->make(AddTagIndexes::class)->handle($jigsaw);
 });
+
+$events->afterBuild(GenerateSitemap::class);
