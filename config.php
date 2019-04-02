@@ -14,11 +14,17 @@ return [
                 array_splice($words, $wordLength);
 
                 return implode(" ", $words);
-            }
+            },
+            'tags' => [],
         ],
         'presentations' => [
             'path' => 'presentations/{date|Y-m-d}/{-presentation}/{filename}',
             'sort' => 'filename',
         ],
     ],
+    'getPostsByTag' => function ($page, $posts) {
+        return $posts->filter(function ($post) use ($page) {
+            return in_array($page->tag, $post->tags ?? []);
+        });
+    },
 ];

@@ -1,9 +1,12 @@
 <?php
 
-use TightenCo\Jigsaw\Jigsaw;
 
+use App\Listeners\AddTagIndexes;
 use App\ParsedownParser;
 use Mni\FrontYAML\Markdown\MarkdownParser;
+use TightenCo\Jigsaw\Jigsaw;
+use TightenCo\Jigsaw\Loaders\DataLoader;
+use TightenCo\Jigsaw\Loaders\CollectionRemoteItemLoader;
 
 /** @var $container \Illuminate\Container\Container */
 /** @var $events \TightenCo\Jigsaw\Events\EventBus */
@@ -20,3 +23,11 @@ use Mni\FrontYAML\Markdown\MarkdownParser;
  */
 
 $container->bind(MarkdownParser::class, ParsedownParser::class);
+
+$container->bind(AddTagIndexes::class, function ($c) {
+    return new AddTagIndexes($c[DataLoader::class], $c[CollectionRemoteItemLoader::class]);
+});
+
+$events->afterCollections(function (Jigsaw $jigsaw) use ($container) {
+    $container->make(AddTagIndexes::class)->handle($jigsaw);
+});
