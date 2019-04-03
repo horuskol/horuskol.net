@@ -5,7 +5,7 @@ author: Stuart Jones
 date: 2019-04-02
 section: post
 tags: [development,jigsaw,php]
-image: https://horuskol.net/assets/images/Toicon-icon-avocado-tag.svg
+image: https://horuskol.net/assets/images/Toicon-icon-avocado-tag.svg.png
 ---
 
 ![mail tag](/assets/images/Toicon-icon-avocado-tag.svg)
