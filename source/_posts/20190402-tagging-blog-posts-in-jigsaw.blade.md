@@ -7,6 +7,8 @@ section: post
 tags: [development,jigsaw,php]
 ---
 
+![mail tag](/assets/images/Toicon-icon-avocado-tag.svg)
+
 I've started setting aside a small part of each day to write. I'm hoping that something will eventually stick, and I'll
 be posting more regularly. Before that, I wanted to be able to tag my blog posts.
 
