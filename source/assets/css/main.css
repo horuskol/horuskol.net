@@ -708,7 +708,7 @@ table {
 }
 
 .markdown pre {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   max-height: 20rem;
   width: 100%;
   overflow: auto;
