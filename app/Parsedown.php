@@ -6,12 +6,14 @@ declare(strict_types=1);
 namespace App;
 
 use Highlight\Highlighter;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 use Parsedown as BaseParsedown;
 
 class Parsedown extends BaseParsedown
 {
     /**
-     * @var \Highlight\Highlighter
+     * @var Highlighter
      */
     protected $highlighter;
 
@@ -38,11 +40,11 @@ class Parsedown extends BaseParsedown
     protected function blockFencedCodeComplete($block)
     {
         try {
-            if ($class = array_get($block, 'element.text.attributes.class', false)) {
-                if (starts_with($class, 'language-')) {
-                    $code = array_get($block, 'element.text.text', '');
-                    $code = $this->highlighter->highlight(str_after($class, 'language-'), $code)->value;
-                    array_set($block, 'element.text.text', $code);
+            if ($class = Arr::get($block, 'element.text.attributes.class', false)) {
+                if (Str::startsWith($class, 'language-')) {
+                    $code = Arr::get($block, 'element.text.text', '');
+                    $code = $this->highlighter->highlight(Str::after($class, 'language-'), $code)->value;
+                    Arr::set($block, 'element.text.text', $code);
                     $block['element']['text']['attributes']['class'] = "hljs {$class}";
                 } else {
                     $block = parent::blockFencedCodeComplete($block);
