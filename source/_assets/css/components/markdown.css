@@ -62,3 +62,7 @@
 .markdown figure figcaption {
   @apply pt-2 pb-2;
 }
+
+.markdown ul {
+  @apply pb-4 leading-normal;
+}

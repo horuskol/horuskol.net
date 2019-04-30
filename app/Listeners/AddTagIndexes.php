@@ -38,29 +38,27 @@ class AddTagIndexes
     {
         $this->jigsaw = $jigsaw;
 
+        $this->configureTagCollection();
+        $this->loadTagCollection();
+    }
 
-
+    protected function configureTagCollection()
+    {
         $tags = $this->extractTagsFrom('posts');
-
         $tagCollectionConfiguration = $this->createCollectionConfiguration($tags);
 
         $this->jigsaw->app->config->get('collections')
             ->put('tags', $tagCollectionConfiguration['tags']);
+    }
 
-
-
+    protected function loadTagCollection()
+    {
         $siteData = $this->dataLoader->loadSiteData($this->jigsaw->app->config);
-
         $this->remoteItemLoader->write($siteData->collections, $this->jigsaw->getSourcePath());
-
         $collectionData = $this->dataLoader->loadCollectionData($siteData, $this->jigsaw->getSourcePath());
-
         $this->jigsaw->getSiteData()->addCollectionData($collectionData);
     }
 
-    /**
-     * Extract tags from a specified collection.
-     */
     protected function extractTagsFrom(string $collectionName): Collection
     {
         return $this->jigsaw->getCollection($collectionName)
@@ -70,10 +68,7 @@ class AddTagIndexes
             ->values(); // reset keys in the array
     }
 
-    /**
-     * Create a collection configuration, similar to a remote collection.
-     */
-    public function createCollectionConfiguration(Collection $tags): Collection
+    protected function createCollectionConfiguration(Collection $tags): Collection
     {
         return collect([
             'tags' => [
