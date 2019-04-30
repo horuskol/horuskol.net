@@ -10,6 +10,8 @@ image: https://horuskol.net/assets/images/Toicon-icon-avocado-tag.svg.png
 
 ![mail tag](/assets/images/Toicon-icon-avocado-tag.svg)
 
+_This is the first of two posts. [Part 2](/blog/2019-04-09/tagging-blog-posts-in-jigsaw-part-2)_
+
 I've started setting aside a small part of each day to write. I'm hoping that something will eventually stick, and I'll
 be posting more regularly. Before that, I wanted to be able to tag my blog posts.
 
@@ -24,8 +26,9 @@ It isn't. However, this is my first static built site using [Jigsaw](http://jigs
 to do this using a model-view-controller framework, and query a database, and all that.
 
 Actually, it can be absurdly easy in a static site, if you don't mind a bit of manual labour whenever you add a new
-blog post you want to tag - but I decided I wanted to be a little bit cleverer. This page shows the simplest way, and
-then a way that brings in a little automation.
+blog post you want to tag - but I decided I wanted to be a little bit cleverer. This post shows the simplest way, and
+then a way that brings in a little automation. [Part 2](/blog/2019-04-09/tagging-blog-posts-in-jigsaw-part-2) goes
+fully automated.
 
 ## The most simple solution
 

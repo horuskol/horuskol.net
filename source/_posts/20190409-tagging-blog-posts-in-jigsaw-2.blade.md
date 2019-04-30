@@ -11,9 +11,10 @@ description: Using the Jigsaw lifecycle to generate tag pages
 
 ![mail tag](/assets/images/Toicon-icon-avocado-tag.svg)
 
-In [my last post](/blog/2019-04-09/tagging-blog-posts-in-jigsaw-part-2) I outlined a couple of fairly simple ways
-of introducing tags to posts using [Jigsaw](http://jigsaw.tighten.co/). This post is about using the Jigsaw 
-[lifecycle](https://jigsaw.tighten.co/docs/event-listeners/) to put a bit more automation in.
+In [my last post](/blog/2019-04-02/tagging-blog-posts-in-jigsaw) I outlined a couple of fairly simple ways
+of introducing tags to posts using [Jigsaw](http://jigsaw.tighten.co/), but each of them needs a little bit of manual
+intervention. This post is about using the Jigsaw [lifecycle](https://jigsaw.tighten.co/docs/event-listeners/) to 
+get fully automated.
 
 When looking for how to do this, there didn't seem to be a lot of other writeups. The best one I could find is by 
 [Nenad Živanović](https://nenadzivanovic.in.rs/blog/2018/08/30/jigsaw-tags-and-archives/) (bonus points: Nenad refers
