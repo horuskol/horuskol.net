@@ -765,6 +765,11 @@ table {
   padding-bottom: .5rem;
 }
 
+.markdown ul {
+  padding-bottom: 1rem;
+  line-height: 1.5;
+}
+
 /*
 Date: 24 Fev 2015
 Author: Pedro Oliveira <kanytu@gmail . com>
