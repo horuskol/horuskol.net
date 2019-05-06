@@ -4,7 +4,7 @@ title: Tagging blog posts in Jigsaw
 author: Stuart Jones
 date: 2019-04-02
 section: post
-tags: [development,jigsaw,php]
+tags: [jigsaw,php]
 image: https://horuskol.net/assets/images/Toicon-icon-avocado-tag.svg.png
 ---
 
