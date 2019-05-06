@@ -4,7 +4,7 @@ title: Getting Tailwind CSS into Jigsaw
 author: Stuart Jones
 date: 2018-10-23
 section: post
-tags: [css,development,jigsaw,laravel,laravel-mix,tailwind]
+tags: [css,jigsaw,laravel,laravel-mix,tailwind]
 ---
 
 This site is powered by the static site generator [Jigsaw](http://jigsaw.tighten.co/),
