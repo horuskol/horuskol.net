@@ -1,68 +1,68 @@
-.markdown h1 {
-  @apply pt-8 pb-4;
-}
+/*.markdown h1 {*/
+/*  @apply pt-8 pb-4;*/
+/*}*/
 
-.markdown h2 {
-  @apply pt-8 pb-4 text-grey-darkest border-grey-darkest border-t;
-}
+/*.markdown h2 {*/
+/*  @apply pt-8 pb-4 text-grey-darkest border-grey-darkest border-t;*/
+/*}*/
 
-.markdown h3 {
-  @apply pt-8 pb-4 text-grey-darker;
-}
+/*.markdown h3 {*/
+/*  @apply pt-8 pb-4 text-grey-darker;*/
+/*}*/
 
-.markdown p {
-  @apply pb-4 leading-normal;
-}
+/*.markdown p {*/
+/*  @apply pb-4 leading-normal;*/
+/*}*/
 
-.markdown code {
-  @apply font-semibold;
-}
+/*.markdown code {*/
+/*  @apply font-semibold;*/
+/*}*/
 
-.markdown pre {
-  @apply mb-12 max-h-20 w-full overflow-auto leading-normal;
-}
+/*.markdown pre {*/
+/*  @apply mb-12 max-h-20 w-full overflow-auto leading-normal;*/
+/*}*/
 
-.markdown pre code {
-  @apply font-normal;
-}
+/*.markdown pre code {*/
+/*  @apply font-normal;*/
+/*}*/
 
-.markdown a {
-  @apply text-blue no-underline;
-}
+/*.markdown a {*/
+/*  @apply text-blue no-underline;*/
+/*}*/
 
-.markdown a:hover {
-  @apply text-blue-darker no-underline;
-}
+/*.markdown a:hover {*/
+/*  @apply text-blue-darker no-underline;*/
+/*}*/
 
-.markdown hr {
-  @apply border-grey border-t-2 pb-4;
-}
+/*.markdown hr {*/
+/*  @apply border-grey border-t-2 pb-4;*/
+/*}*/
 
-.markdown img {
-  max-height: 10em;
-  max-width: 10em;
-  float: right;
-}
+/*.markdown img {*/
+/*  max-height: 10em;*/
+/*  max-width: 10em;*/
+/*  float: right;*/
+/*}*/
 
-.markdown figure {
-  @apply bg-blue-lighter mb-3 ml-3 p-1 text-center;
-}
+/*.markdown figure {*/
+/*  @apply bg-blue-lighter mb-3 ml-3 p-1 text-center;*/
+/*}*/
 
-.markdown figure {
-  max-width: 50%;
-  float: right;
-}
+/*.markdown figure {*/
+/*  max-width: 50%;*/
+/*  float: right;*/
+/*}*/
 
-.markdown figure img {
-  max-height: 100%;
-  max-width: 100%;
-  float: none;
-}
+/*.markdown figure img {*/
+/*  max-height: 100%;*/
+/*  max-width: 100%;*/
+/*  float: none;*/
+/*}*/
 
-.markdown figure figcaption {
-  @apply pt-2 pb-2;
-}
+/*.markdown figure figcaption {*/
+/*  @apply pt-2 pb-2;*/
+/*}*/
 
-.markdown ul {
-  @apply pb-4 leading-normal;
-}
+/*.markdown ul {*/
+/*  @apply pb-4 leading-normal;*/
+/*}*/
