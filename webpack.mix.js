@@ -11,6 +11,7 @@ mix.setPublicPath('source/assets');
 mix.webpackConfig({
     plugins: [
         build.jigsaw,
+        build.browserSync(),
         build.watch(['source/**/*.md', 'source/**/*.php', 'source/**/*.scss', '!source/**/_tmp/*']),
     ]
 });
@@ -22,5 +23,4 @@ mix.options({
     .postCss('source/_assets/css/main.css', 'css/main.css')
     .js('source/_assets/js/main.js', 'js')
     .js('source/_assets/js/presentation.js', 'js')
-    .version()
-    .browserSync({ proxy: 'localhost:8000'});
+    .version();
