@@ -6,6 +6,7 @@ date: 2019-04-02
 section: post
 tags: [jigsaw,php]
 image: https://horuskol.net/assets/images/Toicon-icon-avocado-tag.svg.png
+description: Some approaches to tagging posts and other things in Jigsaw.
 ---
 
 ![mail tag](/assets/images/Toicon-icon-avocado-tag.svg)

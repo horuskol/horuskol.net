@@ -4,13 +4,14 @@ title: Getting Tailwind CSS into Jigsaw
 author: Stuart Jones
 date: 2018-10-23
 section: post
-tags: [css,jigsaw,laravel,laravel-mix,tailwind]
+tags: [css,jigsaw,laravel,laravel-mix,tailwind-css]
+description: Using the new Tailwind CSS utility-first framework in Jigsaw.
 ---
 
 This site is powered by the static site generator [Jigsaw](http://jigsaw.tighten.co/),
-and uses the [Tailwind](https://tailwindcss.com/) utility-first CSS framework.
+and uses the [Tailwind CSS](https://tailwindcss.com/) utility-first framework.
 
-Getting Tailwind into Jigsaw is pretty easy if you're already familiar with using various CSS processing tools, along
+Getting Tailwind CSS into Jigsaw is pretty easy if you're already familiar with using various CSS processing tools, along
 with [Laravel Mix](https://laravel.com/docs/5.7/mix) and [webpack](https://webpack.js.org/). 
 If, like me, you're only just starting to use these tools, hopefully this will help you.
 
@@ -23,7 +24,7 @@ yarn add tailwindcss laravel-mix-purgecss postcss-import --dev
 ```
 
 The `postcss-import` package lets you use `@import` statements in CSS, while the `laravel-mix-purgecss` package provides
-a Mix plugin which removes any unused CSS classes to reduce the payload to browsers. Tailwind generates a very large 
+a Mix plugin which removes any unused CSS classes to reduce the payload to browsers. Tailwind CSS generates a very large 
 stylesheet to save you having to write it for yourself, but you are likely only going to use a small subset of all that.
 
 ## CSS

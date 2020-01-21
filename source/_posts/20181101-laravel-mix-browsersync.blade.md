@@ -5,6 +5,7 @@ author: Stuart Jones
 date: 2018-11-01
 section: post
 tags: [browsersync,laravel,laravel-mix]
+description: Getting BrowserSync to work in local development with Laravel, Mix and Artisan. 
 ---
 
 To be honest, I hadn't really bothered with [BrowserSync](https://browsersync.io/) before I'd started using Jigsaw a couple of weeks ago. But I got a taste for it. It's nice to see your page just refresh as soon as you've saved some code, and immediately see the effect. It's really nice that you can do this with more than one device at a time, and each time you navigate or submit a form in one browser, all the others currently synchronised will follow that action.

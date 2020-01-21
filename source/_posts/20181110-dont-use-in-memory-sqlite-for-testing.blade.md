@@ -5,6 +5,7 @@ author: Stuart Jones
 date: 2018-11-10
 section: post
 tags: [database,laravel,php,sqlite,testing]
+description: Don't let in-memory SQLite seduce you.
 ---
 
 The PDO/SQLite driver for PHP lets you create a [connection to an in-memory database](http://php.net/manual/en/ref.pdo-sqlite.connection.php) - I'd been using this for testing in various projects for a while. It lets you create a safe, ephemeral database so your tests don't impact any local databases. 
