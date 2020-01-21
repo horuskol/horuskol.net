@@ -1,68 +1,73 @@
-/*.markdown h1 {*/
-/*  @apply pt-8 pb-4;*/
-/*}*/
+.markdown h1 {
+  @apply font-bold text-2xl pt-8 pb-4;
+}
 
-/*.markdown h2 {*/
-/*  @apply pt-8 pb-4 text-grey-darkest border-grey-darkest border-t;*/
-/*}*/
+.markdown h2 {
+  @apply font-semibold text-xl pt-8 pb-4 text-gray-900 border-gray-900 border-t;
+}
 
-/*.markdown h3 {*/
-/*  @apply pt-8 pb-4 text-grey-darker;*/
-/*}*/
+.markdown h3 {
+  @apply font-semibold text-lg pt-4 pb-4 text-gray-700;
+}
 
-/*.markdown p {*/
-/*  @apply pb-4 leading-normal;*/
-/*}*/
+.markdown h2 + h3 {
+  @apply pt-0;
+}
 
-/*.markdown code {*/
-/*  @apply font-semibold;*/
-/*}*/
+.markdown p {
+  @apply pb-4 leading-normal;
+}
 
-/*.markdown pre {*/
-/*  @apply mb-12 max-h-20 w-full overflow-auto leading-normal;*/
-/*}*/
+.markdown code {
+  @apply font-mono font-medium bg-white p-1 pb-0;
+}
 
-/*.markdown pre code {*/
-/*  @apply font-normal;*/
-/*}*/
+.markdown pre {
+  @apply mb-8 w-full overflow-auto leading-normal bg-gray-900;
+  max-height: 20em;
+}
 
-/*.markdown a {*/
-/*  @apply text-blue no-underline;*/
-/*}*/
+.markdown pre code {
+  @apply text-white font-mono font-normal bg-gray-900;
+}
 
-/*.markdown a:hover {*/
-/*  @apply text-blue-darker no-underline;*/
-/*}*/
+.markdown a {
+  @apply font-medium text-blue-500 underline;
+}
 
-/*.markdown hr {*/
-/*  @apply border-grey border-t-2 pb-4;*/
-/*}*/
+.markdown a:hover {
+  @apply font-medium text-blue-700 underline;
+}
 
-/*.markdown img {*/
-/*  max-height: 10em;*/
-/*  max-width: 10em;*/
-/*  float: right;*/
-/*}*/
+.markdown hr {
+  @apply border-gray-500 border-t-2 pb-4;
+}
 
-/*.markdown figure {*/
-/*  @apply bg-blue-lighter mb-3 ml-3 p-1 text-center;*/
-/*}*/
+.markdown img {
+  max-height: 10em;
+  max-width: 10em;
+  float: right;
+}
 
-/*.markdown figure {*/
-/*  max-width: 50%;*/
-/*  float: right;*/
-/*}*/
+.markdown figure {
+  @apply bg-blue-200 mb-3 ml-3 p-1 text-center;
+}
 
-/*.markdown figure img {*/
-/*  max-height: 100%;*/
-/*  max-width: 100%;*/
-/*  float: none;*/
-/*}*/
+.markdown figure {
+  max-width: 50%;
+  float: right;
+}
 
-/*.markdown figure figcaption {*/
-/*  @apply pt-2 pb-2;*/
-/*}*/
+.markdown figure img {
+  max-height: 100%;
+  max-width: 100%;
+  float: none;
+}
 
-/*.markdown ul {*/
-/*  @apply pb-4 leading-normal;*/
-/*}*/
+.markdown figure figcaption {
+  @apply pt-2 pb-2;
+}
+
+.markdown ul {
+  @apply pb-4 leading-normal;
+}

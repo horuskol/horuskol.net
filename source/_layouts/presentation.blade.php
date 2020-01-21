@@ -46,8 +46,8 @@
     </script>
 </head>
 
-<body class="bg-grey-lightest text-black">
-    <nav class="bg-blue-lighter p-2">
+<body class="bg-grey-100 text-black">
+    <nav class="bg-blue-200 p-2">
         <ul class="mr-5 sm:mr-10 p-0">
             <li class="inline-block mr-4"><a href="/" class="text-blue-dark hover:text-blue-darker no-underline">HorusKol</a></li>
             <li class="inline-block mr-4"><a href="/presentations" class="text-blue-dark hover:text-blue-darker no-underline">Presentations</a></li>
