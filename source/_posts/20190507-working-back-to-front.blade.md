@@ -6,7 +6,7 @@ date: 2019-05-07
 section: post
 tags: [development,viewcrafter]
 image: https://horuskol.net/assets/images/posts/20190507-working-back-to-front--cart-before-horse.jpg
-description: Working from the backend first might just be working back to front
+description: Working from the backend first might just be working back to front.
 ---
 
 <figure>

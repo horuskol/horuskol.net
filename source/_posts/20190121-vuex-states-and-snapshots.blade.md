@@ -5,6 +5,7 @@ author: Stuart Jones
 date: 2019-01-21
 section: post
 tags: [javascript,vue,vuex]
+description: Using the Jigsaw lifecycle to generate tag pages.
 ---
 
 My current (yet to be named) project for [Savvy Wombat](https://savvywombat.com.au) is using a Vue-based front end, with several interacting components. Each page might be made of several sub-forms, with each form being responsible for saving its values to the server. I also want to give users the ability to rollback each of these sub-forms independently if there are unsaved changes (simply refreshing the page would reset all forms).

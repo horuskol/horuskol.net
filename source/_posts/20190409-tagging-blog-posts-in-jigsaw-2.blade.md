@@ -6,7 +6,7 @@ date: 2019-04-09
 section: post
 tags: [jigsaw,php]
 image: https://horuskol.net/assets/images/Toicon-icon-avocado-tag.svg.png
-description: Using the Jigsaw lifecycle to generate tag pages
+description: Using the Jigsaw lifecycle to generate tag pages automatically.
 ---
 
 ![mail tag](/assets/images/Toicon-icon-avocado-tag.svg)
