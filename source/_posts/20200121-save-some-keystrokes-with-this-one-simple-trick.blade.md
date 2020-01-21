@@ -6,7 +6,7 @@ date: 2020-01-19
 section: post
 tags: [php,quick-tip]
 image: https://horuskol.net/assets/images/posts/20200121-shock.jpg
-description: Fed up prefixing PHP command line scripts with vendor/bin/ ? - have I go the solution for you.
+description: Fed up prefixing PHP command line scripts with vendor/bin/ ? - have I got the solution for you.
 ---
 
 I really wish I could remember who posted this on Twitter some time last year. It actually took me a while to get
