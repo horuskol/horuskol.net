@@ -4,7 +4,9 @@ title: About
 section: page
 ---
 
-I'm a web application developer and the founder of [Savvy Wombat](https://savvywombat.com.au).
+I'm a web application developer and the founder of [Savvy Wombat](https://savvywombat.com.au), and currently working
+on [ViewCrafter](https://viewcrafter.com/) - a rich and powerful browser based tool for building rich
+and powerful browser based apps.
 
 Before starting my own business, I spent several years as the lead for a team of in-house developers, building
 websites and web-based applications for [Australian Medicines Handbook](https://www.amh.net.au). I have been developing
