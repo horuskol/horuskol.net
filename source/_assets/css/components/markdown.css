@@ -3,7 +3,7 @@
 }
 
 .markdown h2 {
-  @apply font-semibold text-xl pt-8 pb-4 text-gray-900 border-gray-900 border-t;
+  @apply font-semibold text-xl pt-8 pb-4 text-gray-900;
 }
 
 .markdown h3 {
@@ -19,16 +19,15 @@
 }
 
 .markdown code {
-  @apply font-mono font-medium bg-white p-1 pb-0;
+  @apply font-mono font-medium text-sm text-orange-600 bg-gray-800 p-1 pb-0 border-gray-500 border-r border-b rounded-sm whitespace-pre;
 }
 
 .markdown pre {
   @apply mb-8 w-full overflow-auto leading-normal bg-gray-900;
-  max-height: 20em;
 }
 
 .markdown pre code {
-  @apply text-white font-mono font-normal bg-gray-900;
+  @apply text-white font-mono font-normal bg-gray-900 border-0;
 }
 
 .markdown a {

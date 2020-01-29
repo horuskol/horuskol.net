@@ -42,6 +42,7 @@
   border-right-width: 1px;
   border-bottom-width: 1px;
   border-radius: 0.125rem;
+  white-space: pre;
 }
 
 .markdown pre {
@@ -50,7 +51,6 @@
   overflow: auto;
   line-height: 1.5;
   background-color: #1a202c;
-  max-height: 20em;
 }
 
 .markdown pre code {
