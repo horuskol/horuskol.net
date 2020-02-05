@@ -9,6 +9,8 @@ image: https://horuskol.net/assets/images/horuskol-ring.png
 description: Have Laravel do some of the heavy lifting for you by taking advantage of its DI framework.
 ---
 
+_This is part 1 of a 2-part series. You could jump to the [next post] but you might still want to read this one first_.
+
 Dependency injection is one of the things that makes Laravel such a great framework to build in. There's a lot of
 functionality already baked into the core that makes it really easy to quickly put together your app.
 
@@ -214,7 +216,8 @@ class StoreListItemRequest extends FormRequest
 
 ## And there's even more
 
-Next week, I'll be posting another approach to dependency injection which I've been refining over the last month or so.
+[Next week][next post], I'll be posting another approach to dependency injection which I've been refining over the 
+last month or so.
 
 [dependency injection on Wikipedia]: https://en.wikipedia.org/wiki/Dependency_injection
 [FormRequest on Laravel docs]: https://laravel.com/docs/6.x/validation#form-request-validation
@@ -223,3 +226,4 @@ Next week, I'll be posting another approach to dependency injection which I've b
 [separation of concerns on Wikipedia]: https://en.wikipedia.org/wiki/Separation_of_concerns
 [service container on Laravel docs]: https://laravel.com/docs/6.x/container
 [service provider on Laravel docs]: https://laravel.com/docs/6.x/providers#introduction
+[next post]: /blog/2020-02-05/levelling-up-dependency-injection-in-laravel
