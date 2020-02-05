@@ -9,8 +9,8 @@ image: https://horuskol.net/assets/images/horuskol-ring.png
 description: Take dependency injection in Laravel controllers to the next level by using interfaces and the service container.
 ---
 
-_This is part 2 of a 2-part series. If you haven't already, I'd check out my [previous post]_, as I gloss over some
-fundamentals in this post for the sake of brevity.
+_This is part 2 of a 2-part series. If you haven't already, I'd check out my [previous post], as I gloss over some
+fundamentals in this post for the sake of brevity_.
 
 At the end of last year, I'd been doing a bit of refactoring on some models and [DRY]ing up some common functionality 
 into traits. I'd also noticed that I had some fairly repetitive code across some controllers, too, and I wanted to
