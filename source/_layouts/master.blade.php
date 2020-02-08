@@ -56,9 +56,10 @@
             <div style="border-radius: 3rem 100% 0% 0% / 100% 100% 0% 0%;" class="text-xl h-12 min-h-0 ml-3 mr-3 pt-2 pb-2 bg-blue-200">
                 <nav>
                     <ul class="ml-5 sm:ml-10 p-0">
-                        <li class="inline-block mr-4"><a href="/" class="text-blue-800 hover:text-blue-500 underline">Blog</a></li>
-                        <li class="inline-block mr-4"><a href="/presentations" class="text-blue-800 hover:text-blue-500 underline">Presentations</a></li>
-                        <li class="inline-block"><a href="/about" class="text-blue-800 hover:text-blue-500 underline">About</a></li>
+                        <li class="inline-block"><a href="/" class="text-blue-800 hover:text-blue-500 underline">Blog</a></li>
+                        <li class="inline-block ml-4"><a href="/presentations" class="text-blue-800 hover:text-blue-500 underline">Presentations</a></li>
+                        <li class="inline-block ml-4"><a href="/about" class="text-blue-800 hover:text-blue-500 underline">About</a></li>
+                        <li class="inline-block ml-4"><a href="/listening" class="text-blue-800 hover:text-blue-500 underline">Listening</a></li>
                     </ul>
                 </nav>
             </div>
