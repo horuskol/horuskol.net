@@ -5,7 +5,7 @@
 
     <dl class="pb-4 leading-normal">
         <dt class="font-semibold text-lg pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="https://artofproductpodcast.com/">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://artofproductpodcast.com/">
                 The Art of Product Podcast
             </a>
         </dt>
@@ -18,7 +18,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="https://basecodefieldguide.com/podcast/">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://basecodefieldguide.com/podcast/">
                 The BaseCode Podcast
             </a>
         </dt>
@@ -30,7 +30,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="https://www.bikeshed.fm/">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://www.bikeshed.fm/">
                 The Bike Shed
             </a>
         </dt>
@@ -44,7 +44,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="https://www.brightandearlypodcast.com/">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://www.brightandearlypodcast.com/">
                 Bright & Early
             </a>
         </dt>
@@ -60,7 +60,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="https://saas.transistor.fm/">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://saas.transistor.fm/">
                 Build Your SaaS
             </a>
         </dt>
@@ -75,7 +75,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="https://www.founderquestpodcast.com/">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://www.founderquestpodcast.com/">
                 Founder Quest
             </a>
         </dt>
@@ -87,7 +87,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="http://www.fullstackradio.com/">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="http://www.fullstackradio.com/">
                 Full Stack Radio
             </a>
         </dt>
@@ -101,7 +101,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="https://www.indiehackers.com/podcast">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://www.indiehackers.com/podcast">
                 The Indie Hackers Podcast
             </a>
         </dt>
@@ -113,7 +113,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="https://laravel-news.com/category/podcast">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://laravel-news.com/category/podcast">
                 Laravel News Podcast
             </a>
         </dt>
@@ -126,7 +126,7 @@
 
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="https://noplanstomerge.simplecast.com/">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://noplanstomerge.simplecast.com/">
                 No Plans to Merge
             </a>
         </dt>
@@ -138,7 +138,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="https://www.northmeetssouth.audio/">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://www.northmeetssouth.audio/">
                 North Meets South
             </a>
         </dt>
@@ -150,7 +150,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="https://phpugly.simplecast.com/">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://phpugly.simplecast.com/">
                 PHPUgly
             </a>
         </dt>
@@ -164,7 +164,7 @@
         </dt>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="https://www.stitcher.com/podcast/brian-rhea-benedikt-deicke/slow-steady">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://www.stitcher.com/podcast/brian-rhea-benedikt-deicke/slow-steady">
                 Slow & Steady
             </a>
         </dt>
@@ -178,7 +178,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="https://softskills.audio/">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://softskills.audio/">
                 Soft Skills Engineering
             </a>
         </dt>
@@ -190,7 +190,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="https://syntax.fm/">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://syntax.fm/">
                 Syntax.
             </a>
         </dt>
@@ -202,7 +202,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="https://testandcode.com/">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://testandcode.com/">
                 Test & Code
             </a>
         </dt>
@@ -215,7 +215,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-500 hover:text-blue-700 underline" href="http://thewestwingweekly.com/">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="http://thewestwingweekly.com/">
                 The West Wing Weekly
             </a>
         </dt>
