@@ -97,7 +97,7 @@
             system administration.
         </dd>
         <dd class="pb-2">
-            Anywhere from 60 to 90 minutes of in-depth conversation.
+            60-90 minutes.
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
@@ -134,7 +134,7 @@
             Real life code talk between two working developers.
         </dd>
         <dd class="pb-2">
-            A little more than 60 minutes most weeks - covers PHP and JavaScript and development in general.
+            60 minutes.
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
