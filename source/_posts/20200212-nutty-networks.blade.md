@@ -18,9 +18,9 @@ conditioning) and building controls company. My remit was to support our company
 as troubleshoot client problems.
 
 One particular client had quite a few problems. It was a major hospital at the other end of the country, and they
-were progressively upgrading the control systems across their site. The hospital was huge - over a kilometre across - 
-and old. The distance between buildings meant that our regular networking and management solutions wouldn't work.
-Luckily, we'd just started selling new control stations and software that could run over Ethernet/IP.
+were progressively upgrading the control systems across their site. The hospital was huge - about a kilometre across - 
+and old. The distance between buildings on the site meant that our regular networking and management solutions wouldn't 
+work. Luckily, we'd just started selling new control stations and software that could run over Ethernet/IP.
 
 Of course, it wasn't that simple. While the entire site was networked, we learnt that some of the buildings being 
 upgraded were still using a [token ring][token ring on Wikipedia] network internally. We were able to source some 
