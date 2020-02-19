@@ -33,7 +33,7 @@ Source: https://github.com/highlightjs/highlight.js/blob/master/src/styles/andro
 
 .hljs-comment,
 .hljs-quote {
-  display: block;
+  display: inline;
   color: #808080;
 }
 
