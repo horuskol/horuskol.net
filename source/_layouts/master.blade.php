@@ -68,20 +68,12 @@
                 @yield('content')
             </div>
 
-            <footer style="border-radius: 0% 0% 4rem 100% / 0% 0% 100% 100%;" class="ml-3 mr-3 mb-8 pt-2 pb-2 bg-blue-200 text-right">
-                <ul>
-                    <li class="inline-block mr-4">
-                        <a href="https://twitter.com/horus_kol" class="text-blue-800 hover:text-blue-500 underline social-icon twitter">twitter</a>
-                    </li>
-                    <li class="inline-block mr-4">
-                        <a href="https://www.facebook.com/horuskol" class="text-blue-800 hover:text-blue-500 underline social-icon facebook">facebook</a>
-                    </li>
-                    <li class="inline-block mr-4">
-                        <a href="https://www.linkedin.com/in/horuskol/" class="text-blue-800 hover:text-blue-500 underline social-icon linkedin">linkedin</a>
-                    </li>
-                </ul>
+            <footer style="border-radius: 0% 0% 4rem 100% / 0% 0% 100% 100%;" class="flex flex-wrap justify-end ml-3 mr-3 mb-8 pt-2 pb-2 bg-blue-200 text-right">
+                <a href="https://dev.to/horus_kol" class="mr-4 text-blue-800 hover:text-blue-500 underline social-icon dev-to">dev.to</a>
+                <a href="https://twitter.com/horus_kol" class="mr-4 text-blue-800 hover:text-blue-500 underline social-icon twitter">twitter</a>
+                <a href="https://www.linkedin.com/in/horuskol/" class="mr-4 text-blue-800 hover:text-blue-500 underline social-icon linkedin">linkedin</a>
 
-                <p class="pt-4 mr-8">
+                <p class="w-full pt-4 pr-8">
                     &copy; Stuart Jones
                 </p>
             </footer>
