@@ -43,9 +43,9 @@ class Parsedown extends BaseParsedown
             if ($class = Arr::get($block, 'element.text.attributes.class', false)) {
                 if (Str::startsWith($class, 'language-')) {
                     $code = Arr::get($block, 'element.text.text', '');
-                    $code = $this->highlighter->highlight(Str::after($class, 'language-'), $code)->value;
+                    $highlightedCode = $this->highlighter->highlight(Str::after($class, 'language-'), $code)->value;
                     Arr::forget($block, 'element.text.text');
-                    Arr::set($block, 'element.text.rawHtml', $code);
+                    Arr::set($block, 'element.text.rawHtml', $highlightedCode);
                     Arr::set($block, 'element.text.allowRawHtmlInSafeMode', true);
                     $block['element']['text']['attributes']['class'] = "hljs {$class}";
                 } else {

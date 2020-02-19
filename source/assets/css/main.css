@@ -51,6 +51,7 @@
   overflow: auto;
   line-height: 1.5;
   background-color: #1a202c;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .markdown pre code {
@@ -91,6 +92,7 @@
   margin-left: 0.75rem;
   padding: 0.25rem;
   text-align: center;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .markdown figure {
@@ -107,6 +109,14 @@
 .markdown figure figcaption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.markdown aside {
+  font-size: 0.875rem;
+  background-color: #c3dafe;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .markdown ul {
@@ -147,7 +157,7 @@ Source: https://github.com/highlightjs/highlight.js/blob/master/src/styles/andro
 
 .hljs-comment,
 .hljs-quote {
-  display: block;
+  display: inline;
   color: #808080;
 }
 
