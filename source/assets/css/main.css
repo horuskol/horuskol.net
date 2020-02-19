@@ -289,7 +289,8 @@ Source: https://github.com/highlightjs/highlight.js/blob/master/src/styles/andro
 
 .social-icon.dev-to:before {
   background-image: url(https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg);
-  background-size: 1em;
+  background-size: 0.8em;
+  background-position: 0 0.15em;
 }/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document

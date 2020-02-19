@@ -54,7 +54,7 @@
             </header>
 
             <div style="border-radius: 3rem 100% 0% 0% / 100% 100% 0% 0%;" class="text-xl ml-3 mr-3 pt-2 pb-2 bg-blue-200">
-                <nav>
+                <nav class="w-3/4">
                     <ul class="ml-5 sm:ml-10 p-0">
                         <li class="inline-block mr-4"><a href="/" class="text-blue-800 hover:text-blue-500 underline">Blog</a></li>
                         <li class="inline-block mr-4"><a href="/presentations" class="text-blue-800 hover:text-blue-500 underline">Presentations</a></li>
