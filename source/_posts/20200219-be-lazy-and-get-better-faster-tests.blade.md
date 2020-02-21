@@ -9,23 +9,15 @@ image: https://horuskol.net/assets/images/posts/20200219-lazy.jpg
 description: A quick look at how Laravel's database factories help with simpler tests, and how being lazy can speed up your tests.
 ---
 
-Automated tests are awesome. Having repeatable tests on your codebase to warn you if anything trippy has happened 
-because of changes you've been making, and thereby helping to preventing the release of buggy code, is a lifesaver.
-They're also a bit of a pain sometimes, especially when testing code relying on a framework, since you sometimes need 
-to bootstrap that framework as part of your tests.
+Automated tests are awesome. Having repeatable tests on your codebase to warn you if anything trippy has happened because of changes you've been making, and thereby helping to preventing the release of buggy code, is a lifesaver. They're also a bit of a pain sometimes, especially when testing code relying on a framework, since you sometimes need  to bootstrap that framework as part of your tests.
 
-When you're dealing with testing database interactions, you can experience even more pain. Not only do you have to 
-restore state between each test, you also have to insert test data for many tests, which slows down tests and you
-can end up with a lot of setup prior to your actual test and assertions.
+When you're dealing with testing database interactions, you can experience even more pain. Not only do you have to  restore state between each test, you also have to insert test data for many tests, which slows down tests and you can end up with a lot of setup prior to your actual test and assertions.
 
-There are a number of strategies for speeding up testing, such as these 
-[general tips][tips to speed up phpunit tests - Laravel News]. Even database testing can be improved with functionality
-like [Laravel's RefreshDatabase trait][Under the hood: How RefreshDatabase works in Laravel tests].
+There are a number of strategies for speeding up testing, such as these [general tips][tips to speed up phpunit tests - Laravel News]. Even database testing can be improved with functionality like [Laravel's RefreshDatabase trait][Under the hood: How RefreshDatabase works in Laravel tests].
 
 ## Database factories
 
-Laravel provides [database factories][factories for database testing on Laravel docs], which allow you to easily create 
-fully populated data models within your tests, and reduce clutter within the test methods.
+Laravel provides [database factories][factories for database testing on Laravel docs], which allow you to easily create fully populated data models within your tests, and reduce clutter within the test methods.
 
 Say you have a simple table defined in a migration like this:
 
@@ -53,9 +45,7 @@ Then in your test, you can write a single line:
 $school = factory(School::class)->create();
 ```
 
-And now you will have a model and a database record which can be manipulated and tested as needed. Even better, because
-the factory is using the [Faker library][Faker on GitHub], every school will have have a random name - reducing your
-tests' reliance on hardcoded strings and values.
+And now you will have a model and a database record which can be manipulated and tested as needed. Even better, because the factory is using the [Faker library][Faker on GitHub], every school will have have a random name - reducing your tests' reliance on hardcoded strings and values.
 
 If you want to just create a model without persisting it in the database, you can call the `make` method instead:
 
@@ -85,8 +75,7 @@ public function school()
 }
 ```
 
-Now, in order for our database factory to create a valid course, we need to set the `school_id` field, since it isn't
-nullable (courses _must_ be attached to a school). The easiest, naive way is to do:
+Now, in order for our database factory to create a valid course, we need to set the `school_id` field, since it isn't nullable (courses _must_ be attached to a school). The easiest, naive way is to do:
 
 ```php
 $factory->define(Course::class, function (Faker $faker) {
@@ -99,8 +88,7 @@ $factory->define(Course::class, function (Faker $faker) {
 
 Unfortunately, this wouldn't also create the school, which may be important in some tests.
 
-It is possible to inject/override values defined in the factory when using them to create or make models in your test.
-So, you could do something like:
+It is possible to inject/override values defined in the factory when using them to create or make models in your test. So, you could do something like:
 
 ```php
 $school = factory(School::class)->create();
@@ -113,9 +101,7 @@ $course = factory(Course::class)->create([
 yes, that `'school_id' => $school,` is correct - the factory knows how to resolve the ID from the school object.
 </aside>
 
-In some tests, though, this could get a bit boilerplate, especially with complex/multiple relationships, and that 
-boilerplate can get in the way of seeing what the test is doing/testing. Sometimes you can push it up to a setup method 
-in the test case, but sometimes I'd rather just create a valid course along with it's relations in just the one line.
+In some tests, though, this could get a bit boilerplate, especially with complex/multiple relationships, and that boilerplate can get in the way of seeing what the test is doing/testing. Sometimes you can push it up to a setup method in the test case, but sometimes I'd rather just create a valid course along with it's relations in just the one line.
 
 To do this, you can call other factories from within a factory:
 
@@ -128,10 +114,7 @@ $factory->define(Course::class, function (Faker $faker) {
 });
 ```
 
-Unfortunately, this brings a couple of problems. The first is that if you simply make a course instead of creating and
-persisting it, you will still create a database record for the school. The other problem is that, while you can still 
-inject a school from your test, you'll end up with two school records being created (the one you create in your test
-and the one being made by the course's database factory which is then overridden).
+Unfortunately, this brings a couple of problems. The first is that if you simply make a course instead of creating and persisting it, you will still create a database record for the school. The other problem is that, while you can still inject a school from your test, you'll end up with two school records being created (the one you create in your test and the one being made by the course's database factory which is then overridden).
 
 ```php
 /**
@@ -153,11 +136,9 @@ public function that_school_can_be_injected_into_course_factory()
 }
 ```
 
-<aside>the tests in this post are not what you'd normally bother writing - I'm just using them to highlight what's 
-happening when you use the factories</aside>
+<aside>the tests in this post are not what you'd normally bother writing - I'm just using them to highlight what's happening when you use the factories</aside>
 
-This means there are 3 inserts into the database when there should have only been 2. That extra insert adds a little
-bit more time to the test, and that can add up across multiple tests.
+This means there are 3 inserts into the database when there should have only been 2. That extra insert adds a little bit more time to the test, and that can add up across multiple tests.
 
 Even worse, if you are creating multiple courses in a test:
 
@@ -198,8 +179,7 @@ $factory->define(Course::class, function (Faker $faker) {
 });
 ```
 
-Using the `lazy` method like this means that we can override the school for the course without creating redundant
-data. Both of the following tests will pass when we use this method.
+Using the `lazy` method like this means that we can override the school for the course without creating redundant data. Both of the following tests will pass when we use this method.
 
 ```php
 /**
@@ -229,8 +209,7 @@ public function that_school_can_be_injected_into_course_factory()
 }
 ```
 
-The limit on the `lazy` method is that it will still create a school and persist it if we don't provide an override, 
-even if we don't persist the course.
+The limit on the `lazy` method is that it will still create a school and persist it if we don't provide an override, even if we don't persist the course.
 
 ```php
 /**
@@ -244,19 +223,13 @@ public function that_school_is_not_created_if_course_is_not_persisted()
 }
 ```
 
-I assume the reason is that the only way for the factory to get a valid school ID to inject into the course is for 
-there to be an actual school record in the database to provide the auto-generated ID. I don't think that this is
-necessarily a requirement - the only time `school_id` must be correct and valid is when we save the course - which
-we might not be doing in our test. However, then we would have to have our factory somehow detect that we are saving
-the course in order to generate the school record and retrieve an ID.
+I assume the reason is that the only way for the factory to get a valid school ID to inject into the course is for there to be an actual school record in the database to provide the auto-generated ID. I don't think that this is necessarily a requirement - the only time `school_id` must be correct and valid is when we save the course - which we might not be doing in our test. However, then we would have to have our factory somehow detect that we are saving the course in order to generate the school record and retrieve an ID.
 
 Something to think about?
 
 ## Finishing up
 
-Database factories are very helpful. The `lazy` method, makes it possible to reduce unnecessary database inserts
-during the lifetime of tests. As I said, the amount of time saved in a single test is pretty small, but this can add 
-up when you have a lot of tests relying on the database.
+Database factories are very helpful. The `lazy` method, makes it possible to reduce unnecessary database inserts during the lifetime of tests. As I said, the amount of time saved in a single test is pretty small, but this can add  up when you have a lot of tests relying on the database.
 
 [tips to speed up phpunit tests - Laravel News]: https://laravel-news.com/tips-to-speed-up-phpunit-tests
 [Under the hood: How RefreshDatabase works in Laravel tests]: https://dev.to/daniel_werner/under-the-hood-how-refreshdatabase-works-in-laravel-tests-2728
