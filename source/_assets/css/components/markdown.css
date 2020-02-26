@@ -23,7 +23,7 @@
 }
 
 .markdown pre {
-  @apply mb-8 w-full overflow-auto leading-normal bg-gray-900 shadow-xl;
+  @apply mb-8 w-full max-h-40 overflow-auto leading-normal bg-gray-900 shadow-xl;
 }
 
 .markdown pre code {
@@ -57,10 +57,19 @@
   float: right;
 }
 
+.markdown figure.in-flow {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: fit-content;
+  float: none;
+}
+
 .markdown figure img {
   max-height: 100%;
   max-width: 100%;
   float: none;
+  display: inline-block;
 }
 
 .markdown figure figcaption {
