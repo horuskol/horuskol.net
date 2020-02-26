@@ -80,6 +80,15 @@
   @apply text-sm bg-indigo-200 mb-8 p-2 shadow-xl;
 }
 
+.markdown ul,
+.markdown ol {
+  @apply ml-6 pb-4 leading-normal;
+}
+
 .markdown ul {
-  @apply pb-4 leading-normal;
+  @apply list-disc;
+}
+
+.markdown ol {
+  @apply list-decimal;
 }
