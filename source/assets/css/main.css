@@ -48,6 +48,7 @@
 .markdown pre {
   margin-bottom: 2rem;
   width: 100%;
+  max-height: 40rem;
   overflow: auto;
   line-height: 1.5;
   background-color: #1a202c;
@@ -100,10 +101,21 @@
   float: right;
 }
 
+.markdown figure.in-flow {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  float: none;
+}
+
 .markdown figure img {
   max-height: 100%;
   max-width: 100%;
   float: none;
+  display: inline-block;
 }
 
 .markdown figure figcaption {
@@ -5458,6 +5470,14 @@ video {
 
 .-ml {
   margin-left: -0.25rem;
+}
+
+.max-h-0 {
+  max-height: 0;
+}
+
+.max-h-40 {
+  max-height: 40rem;
 }
 
 .max-h-full {
@@ -16363,6 +16383,14 @@ video {
 
   .sm\:-ml {
     margin-left: -0.25rem;
+  }
+
+  .sm\:max-h-0 {
+    max-height: 0;
+  }
+
+  .sm\:max-h-40 {
+    max-height: 40rem;
   }
 
   .sm\:max-h-full {
@@ -27271,6 +27299,14 @@ video {
     margin-left: -0.25rem;
   }
 
+  .md\:max-h-0 {
+    max-height: 0;
+  }
+
+  .md\:max-h-40 {
+    max-height: 40rem;
+  }
+
   .md\:max-h-full {
     max-height: 100%;
   }
@@ -38177,6 +38213,14 @@ video {
     margin-left: -0.25rem;
   }
 
+  .lg\:max-h-0 {
+    max-height: 0;
+  }
+
+  .lg\:max-h-40 {
+    max-height: 40rem;
+  }
+
   .lg\:max-h-full {
     max-height: 100%;
   }
@@ -49081,6 +49125,14 @@ video {
 
   .xl\:-ml {
     margin-left: -0.25rem;
+  }
+
+  .xl\:max-h-0 {
+    max-height: 0;
+  }
+
+  .xl\:max-h-40 {
+    max-height: 40rem;
   }
 
   .xl\:max-h-full {
