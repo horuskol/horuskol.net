@@ -3,6 +3,10 @@ module.exports = {
         extend: {
             margin: {
                 '-': '-0.25rem'
+            },
+            maxHeight: {
+                '0': '0',
+                '40': '40rem'
             }
         }
     },
