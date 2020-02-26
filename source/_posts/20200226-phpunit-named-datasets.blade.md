@@ -5,7 +5,7 @@ author: Stuart Jones
 date: 2020-02-26
 section: post
 tags: [php, phpunit, testing]
-image: https://horuskol.net/assets/posts/20200226-phpunit-named-data-sets.png
+image: https://horuskol.net/assets/images/posts/20200226-phpunit-named-data-sets.png
 description: Name the data sets in your data providers to help identify failing tests, and generally make life easier.
 ---
 
