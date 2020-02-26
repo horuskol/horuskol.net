@@ -8,6 +8,10 @@ tags: [css,jigsaw,laravel,laravel-mix,tailwind-css]
 description: Using the new Tailwind CSS utility-first framework in Jigsaw.
 ---
 
+<aside class="border border-red-700 text-red-700 bg-red-200 p-2 mb-4">
+Time moves on for us all, and as new versions of tools and libraries are released, some information gets out of date.
+</aside>
+
 This site is powered by the static site generator [Jigsaw](http://jigsaw.tighten.co/),
 and uses the [Tailwind CSS](https://tailwindcss.com/) utility-first framework.
 
