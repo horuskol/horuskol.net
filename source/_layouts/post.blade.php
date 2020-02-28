@@ -7,6 +7,7 @@
     <meta property="twitter:url" content="{{ $page->getPath() }}">
     <meta property="twitter:title" content="{{ $page->title }}">
     @if ($page->description)
+        <meta name="description" content="{{ $page->description }}">
         <meta property="twitter:description" content="{{ $page->description }}">
     @endif
     @if ($page->image)
