@@ -19,16 +19,21 @@
 @endsection
 
 @section('content')
-<article class="markdown">
-    <h1>{{ $page->title }}</h1>
-    <p class="border-grey-light border-b pb-0 mb-8">{{ date('F j, Y', $page->date) }}</p>
-    @yield('post')
+<article>
+    <header class="border-grey-light border-b pb-0 mb-8">
+        <h1 class="font-bold text-2xl pt-8 pb-4">{{ $page->title }}</h1>
+        <p class="">{{ date('F j, Y', $page->date) }}</p>
+    </header>
+
+    <main class="markdown">
+        @yield('post')
+    </main>
 
     <footer class="border-grey border-t-2 pt-4 pb-8">
         <ul class="list-reset pb-8">
             @foreach($page->tags as $tag)
                 <li class="inline-block mr-4">
-                    <a href="/blog/tags/{{ $tag }}">{{ $tag }}</a>
+                    <a href="/blog/tags/{{ $tag }}" class="font-medium text-blue-500 underline hover:text-blue-700">{{ $tag }}</a>
                 </li>
             @endforeach
         </ul>
@@ -36,13 +41,13 @@
         <ul class="list-reset flex flex-wrap justify-between">
             @if ($page->getNext())
                 <li class="pr-2 pt-4 flex-grow whitespace-no-wrap">
-                    <a href="{{ $page->getNext()->getPath() }}" class="text-blue-dark hover:text-blue-darker no-underline">&lt;&lt; {{  $page->getNext()->title }}</a>
+                    <a href="{{ $page->getNext()->getPath() }}" class="font-medium text-blue-500 underline hover:text-blue-700">&lt;&lt; {{  $page->getNext()->title }}</a>
                 </li>
             @endif
 
             @if ($page->getPrevious())
                 <li class="pl-2 pt-4 flex-grow whitespace-no-wrap text-right">
-                    <a href="{{ $page->getPrevious()->getPath() }}" class="text-blue-dark hover:text-blue-darker no-underline">{{  $page->getPrevious()->title }} >></a>
+                    <a href="{{ $page->getPrevious()->getPath() }}" class="font-medium text-blue-500 underline hover:text-blue-700">{{  $page->getPrevious()->title }} >></a>
                 </li>
             @endif
         </ul>
