@@ -56,4 +56,4 @@ Funnily enough, I came across this tweet yesterday after I'd already decided to 
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-[token ring on Wikipedia]: (https://en.wikipedia.org/wiki/Token_ring)
+[token ring on Wikipedia]: https://en.wikipedia.org/wiki/Token_ring
