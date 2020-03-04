@@ -14,12 +14,13 @@ pagination:
         </div>
     @endforeach
 
-    <footer class="flex justify-around border-grey border-t-2 pt-4 pb-8">
+    <footer class="flex justify-between border-grey border-t-2 pt-4 pb-8">
         @if ($previous = $pagination->previous)
             <a href="{{ $pagination->first }}" class="text-blue-800 hover:text-blue-500 underline">&lt;&lt;</a>
             <a href="{{ $previous }}" class="text-blue-800 hover:text-blue-500 underline">&lt;</a>
         @else
-            &lt;&lt; &lt;
+            <span>&lt;&lt;</span>
+            <span>&lt;</span>
         @endif
 
         @foreach ($pagination->pages as $pageNumber => $path)
@@ -33,7 +34,8 @@ pagination:
             <a href="{{ $next }}" class="text-blue-800 hover:text-blue-500 underline">&gt;</a>
             <a href="{{ $pagination->last }}" class="text-blue-800 hover:text-blue-500 underline">&gt;&gt;</a>
         @else
-            &gt; &gt;&gt;
+            <span>&gt;</span>
+            <span>&gt;&gt;</span>
         @endif
     </footer>
 @endsection
