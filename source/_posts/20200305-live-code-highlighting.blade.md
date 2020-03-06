@@ -6,12 +6,12 @@ date: 2020-03-05
 section: post
 tags: [php, phpunit, testing]
 image: https://horuskol.net/assets/images/horuskol-ring.png
-description: Here's a simple way to build a live code editor with highlighting 
+description: A cross-platform, vanilla JavaScript text editor that can provide code highlighting (or any other kind of highlighting).
 ---
 
-I wanted to be able to highlight code that users were writing into a textarea - particularly, I wanted to highlight potential problems with their code. Things like invalid syntax.
+I wanted to be able to highlight code that users were writing into a textarea - particularly, I wanted to highlight potential problems with their code, like invalid syntax. I also think it would be nice if users can write code and have it highlight in much the same way as it might in a code editor.
 
-The problem is that there is no way to style separate parts of the text inside a textarea. It really is just a blob of text after all.
+The problem is that there is no way to style separate parts of the text inside a textarea. It is just a blob of text after all.
 
 So, I went looking for a solution, and found quite a smart approach on [Coder's Block]. But his approach uses jQuery, and is several years old. I decided to adapt it to use vanilla JavaScript so it would be a more flexible example (actually, I first wrote it inside a VueJS component, and then revisited it this week to write up the blog post).
 
@@ -32,13 +32,13 @@ So, I went looking for a solution, and found quite a smart approach on [Coder's 
 </form>
 ```
 
-If you haven't come across the `output` element before, here's a good [blog post][blog post on output element]. Here's the definition from the [HTML specification][HTML specification for output element].
+If you haven't come across the `output` element before, here's a good [blog post][blog post on output element]. Here's the definition from the [HTML specification][HTML specification for output element]:
 
 > The output element represents the result of a calculation performed by the application, or the result of a user action.
 
 Unfortunately, the element still isn't quite universally supported, but a workaround is to include the ARIA attribute `role="status"` to inform any browsers that it is a "live" region. The `aria-controls` attributes on the language selector and code input elements inform browsers that changes to these elements will result in a change in the output element.
 
-Turning off the autocapitalize and spellcheck will prevent browsers marking almost everything you type as a spelling error (browsers don't understand code in textareas). 
+Turning off the autocapitalize and spellcheck will prevent browsers marking almost everything we type in the textarea as a spelling error (browsers don't understand code in textareas). 
 
 ## The styles
 
@@ -86,17 +86,17 @@ Putting `position: absolute` on the textarea and output elements, means they are
 
 We want to make sure the text lines up, so we set the same font and line-height properties for the two elements. Of course, you can set whatever font family, sizes, or other styles here, as long as they're the same. Since this is a code editor, I suggest using a monospace font (I've left it to the system default).
 
-Similarly, since this is a code editor, we want the textarea and output to use the same whitespace and wrapping rules that a `pre` element would.
+Similarly, since this is intended to be a code editor, we want the textarea and output to use the same whitespace and wrapping rules that a `pre` element would.
 
 Setting the `z-index` makes sure the textarea is above the output by setting a higher z-index value. This is important, since we want the user to be able to interact with textarea.
 
-Finally, we want to see through the textarea - which is easily done by making both the `color` and `background-color` transparent. Unfortunately, this also makes the caret (the pipe symbol which shows where the typing cursor is) transparent. Luckily, we can also set that with `caret-color`.
+Finally, we want to see the highlighted code through the textarea - which is easily done by making both the `color` and `background-color` transparent. This also makes the caret (the pipe symbol which shows where the typing cursor is) transparent, but we can fix that by setting the `caret-color` property.
 
 ## Highlighting
 
-You could roll your own highlighting code - but there's an amazingly comprehensive library available that supports 185 languages, and comes with almost 100 styles ready to choose from. [highlight.js] can be brought in as an npm module, or loaded in from a CDN (which only includes the top 34 languages). It is also possible to build your own selection of languages into a minified script - so if you only need a handful of languages, you can limit the file size this way. The package includes all the available styles as separate CSS files, so you just have to select the one you want.
+We could roll own own highlighting code - but there's an amazingly comprehensive library available that supports 185 languages, and comes with almost 100 styles ready to choose from. [highlight.js] can be brought in as an npm module, or loaded in from a CDN (which only includes the top 34 languages). It is also possible to build a custom selection of languages into a minified script - so if you only need a handful of languages, you can limit the file size this way. The package includes all the available styles as separate CSS files, so we just have to select the one we want.
 
-I put this code after the form.
+I included the stylesheet and highlighting script directly after the form:
 
 ```html
 <link rel="stylesheet" href="./css/a11y-light.css" type="text/css">
@@ -123,9 +123,9 @@ So, whenever the text in the textarea changes, we update the `textContent` of th
 
 ## Dealing with scrolling
 
-Inevitably, a user is going to type a line that is too long for the available textarea, and since we've prevented line wrapping in our stylesheet, the textarea is going to start scrolling - but the output will not. Similarly, if you write more lines than the textarea's height can accommodate, the same thing will happen.
+Inevitably, a user is going to type a line that is too long for the available textarea, and since we've prevented line wrapping in our stylesheet, the textarea is going to start scrolling - but the output will not. Similarly, if the user writes more lines than the textarea's height can accommodate, the same thing will happen.
 
-Thankfully, you can set the scrolling position of an element programmatically, and since we've taken pains to ensure the textarea and output have the same dimensions and padding and so on, it's trivial to calculate the output's scrolling position from the textarea's:
+Thankfully, we can set the scrolling position of an element programmatically, and since we've taken pains to ensure the textarea and output have the same dimensions and padding and so on, it's trivial to calculate the output's scrolling position from the textarea's:
 
 ```javascript
 codeInput.addEventListener('scroll', (event) => {
@@ -138,7 +138,7 @@ codeInput.addEventListener('scroll', (event) => {
 
 Textareas are, by default, resizable. We could make our life easy, and turn off that ability. However, I don't like it when I can't resize a textarea on a form (especially as I can be rather verbose), and I'm sure a lot of other users wouldn't appreciate it either.
 
-To do this, we need to use a `ResizeObserver`:
+To keep the output to the same size as the textarea, we need to use a `ResizeObserver`:
 
 ```javascript
 const resizeObserver = new ResizeObserver((entries) => {
@@ -174,6 +174,14 @@ languageSelector.addEventListener('change', (event) => {
   hljs.highlightBlock(codeOutput);
 });
 ```
+
+## Extra credit
+
+I suppose we could add in a drop down that lets the user pick the style - there are ways to manage what files/styles are loaded in.
+
+Another enhancement would be reacting to certain specific keys for a bit of code completion. We could catch the `tab` key to indent instead of changing focus to the next input (although, that will affect how some people navigate the form/page), or catch a `{` or `(` to then add the closing pair.
+
+We could go even further and start linting for the user - but that will need a custom highlighting function to introduce good descriptive markup. With title attributes on the highlighting markup we could even include a description of the error or whatever. Although, so far I'm having trouble getting the tooltips to display through the textarea - the z-index settings block the mouseover event from passing through.
 
 [Coder's Block]: https://codersblock.com/blog/highlight-text-inside-a-textarea/
 [blog post on output element]: https://www.scottohara.me/blog/2019/07/10/the-output-element.html

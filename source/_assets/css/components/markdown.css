@@ -80,6 +80,24 @@
   @apply text-sm bg-indigo-200 mb-8 p-2 shadow-xl;
 }
 
+.markdown blockquote {
+  @apply bg-indigo-200 mb-8 p-2 shadow-xl;
+}
+
+.markdown blockquote p:first-child::before {
+  content: '“';
+  bottom: -0.5rem;
+  line-height: 0;
+  @apply relative pr-1 text-4xl text-blue-700;
+}
+
+.markdown blockquote p:last-child::after {
+  content: '”';
+  bottom: -1.5rem;
+  line-height: 0;
+  @apply relative pl-1 text-4xl text-blue-700;
+}
+
 .markdown ul,
 .markdown ol {
   @apply ml-6 pb-4 leading-normal;
