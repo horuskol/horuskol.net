@@ -4,7 +4,7 @@ title: Live code highlighting in the browser with vanilla JavaScript
 author: Stuart Jones
 date: 2020-03-05
 section: post
-tags: [php, phpunit, testing]
+tags: [javascript]
 image: https://horuskol.net/assets/images/horuskol-ring.png
 description: A cross-platform, vanilla JavaScript text editor that can provide code highlighting (or any other kind of highlighting).
 ---
