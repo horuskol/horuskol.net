@@ -5,6 +5,18 @@
 
     <dl class="pb-4 leading-normal">
         <dt class="font-semibold text-lg pb-2">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://apisyouwonthate.com/podcast">
+                APIs you won't hate
+            </a>
+        </dt>
+        <dd class="italic pb-2">
+            Rather sporadic discussions between Phil Sturgeon, Mike Bifulco, and Matt Trask, covering the world of API development.
+        </dd>
+        <dd class="pb-2">
+            30-45 minutes.
+        </dd>
+
+        <dt class="font-semibold text-lg pb-2">
             <a class="text-blue-800 hover:text-blue-500 underline" href="https://artofproductpodcast.com/">
                 The Art of Product Podcast
             </a>
@@ -68,10 +80,34 @@
             What does it take to build a SaaS in 2020?
         </dd>
         <dd class="italic pb-2">
-            Follow Jon and Justin as they grow Transistor.fm.
+            Follow Jon Buda and Justin Jackson as they grow Transistor.fm.
         </dd>
         <dd class="pb-2">
             30-60 minutes.
+        </dd>
+
+        <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://pod.link/thecsspodcast">
+                The CSS Podcast
+            </a>
+        </dt>
+        <dd class="italic pb-2">
+            Cascading Style Sheets (CSS) is the web’s core styling language. For web developers, It’s one of the quickest technologies to get started with, but one of the hardest to master. Follow Una Kravets and Adam Argyle, Developer Advocates from Google, who gleefully breakdown complex aspects of CSS into digestible episodes covering everything from accessibility to z-index.
+        </dd>
+        <dd class="pb-2">
+            Fresh new podcast.
+        </dd>
+
+        <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://www.stitcher.com/podcast/anchor-podcasts/extremities">
+                Extremities
+            </a>
+        </dt>
+        <dd class="italic pb-2">
+            Why and how people live in earth's most isolated and extreme settlements.
+        </dd>
+        <dd class="pb-2">
+            20-30 minutes.
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
@@ -150,17 +186,27 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 hover:text-blue-500 underline" href="https://phpugly.simplecast.com/">
-                PHPUgly
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://outofbeta.fm/">
+                Out of Beta
             </a>
         </dt>
         <dt class="italic pb-2">
-            The podcast your mother warned you about. Ramblings of a few overworked PHP Developers. We discuss
-            everything, from the challenges and excitement of running our small business and development shop the
-            DiegoDev Group, to general day to day coding projects, to anything geek related or any other tech topics.
+            Follow our journey as we build and launch two startups as a part of the TinySeed remote accelerator. Hosted by Matt Wensing, founder of Summit, and Peter Suhm, founder of Branch.
         </dt>
         <dt class="pb-2">
-            60 minutes.
+            30-40 minutes.
+        </dt>
+
+        <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://www.stitcher.com/podcast/earwolf/seth-godins-startup-school">
+                Seth Godin's Startup School
+            </a>
+        </dt>
+        <dt class="italic pb-2">
+            Seth Godin is a thought leader in the marketing and business world. In this rare live recording, hear Seth as he guides thirty entrepreneurs through a workshop exploring how they can build and run their dream business.
+        </dt>
+        <dt class="pb-2">
+            15-40 minutes. 15 episodes.
         </dt>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
@@ -187,6 +233,21 @@
         </dd>
         <dd class="pb-2">
             30 minutes.
+        </dd>
+
+        <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
+            <a class="text-blue-800 hover:text-blue-500 underline" href="https://www.abc.net.au/radionational/programs/sum-of-all-parts/">
+                Sum of All Parts
+            </a>
+        </dt>
+        <dd class="italic pb-2">
+            Sum of All Parts is an ABC podcast that tells extraordinary stories from the world of numbers.
+        </dd>
+        <dd class="italic pb-2">
+            It's about the amazing and powerful numbers all around us, how they work, and the people who work with them.
+        </dd>
+        <dd class="pb-2">
+            5-30 minutes.
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
