@@ -35,7 +35,11 @@
 }
 
 .markdown a:hover {
-  @apply font-medium text-blue-700 underline;
+  @apply font-medium text-blue-800 underline;
+}
+
+.markdown a:visited {
+  @apply font-medium text-purple-800 underline;
 }
 
 .markdown hr {

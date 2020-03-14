@@ -11,6 +11,7 @@ module.exports = {
         }
     },
     variants: {
-        borderWidth: ['responsive', 'last']
+        borderWidth: ['responsive', 'last'],
+        textColor: ['visited', 'hover']
     }
 };

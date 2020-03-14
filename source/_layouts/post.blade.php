@@ -33,7 +33,7 @@
         <ul class="list-reset pb-8">
             @foreach($page->tags as $tag)
                 <li class="inline-block mr-4">
-                    <a href="/blog/tags/{{ $tag }}" class="font-medium text-blue-500 underline hover:text-blue-700">{{ $tag }}</a>
+                    <a href="/blog/tags/{{ $tag }}" class="font-medium text-blue-500 underline visited:text-purple-800 hover:text-blue-800">{{ $tag }}</a>
                 </li>
             @endforeach
         </ul>
@@ -41,13 +41,13 @@
         <ul class="list-reset flex flex-wrap justify-between">
             @if ($page->getNext())
                 <li class="pr-2 pt-4 flex-grow whitespace-no-wrap">
-                    <a href="{{ $page->getNext()->getPath() }}" class="font-medium text-blue-500 underline hover:text-blue-700">&lt;&lt; {{  $page->getNext()->title }}</a>
+                    <a href="{{ $page->getNext()->getPath() }}" class="font-medium text-blue-500 underline visited:text-purple-800 hover:text-blue-800">&lt;&lt; {{  $page->getNext()->title }}</a>
                 </li>
             @endif
 
             @if ($page->getPrevious())
                 <li class="pl-2 pt-4 flex-grow whitespace-no-wrap text-right">
-                    <a href="{{ $page->getPrevious()->getPath() }}" class="font-medium text-blue-500 underline hover:text-blue-700">{{  $page->getPrevious()->title }} >></a>
+                    <a href="{{ $page->getPrevious()->getPath() }}" class="font-medium text-blue-500 underline visited:text-purple-800 hover:text-blue-800">{{  $page->getPrevious()->title }} >></a>
                 </li>
             @endif
         </ul>
