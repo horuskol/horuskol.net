@@ -16,7 +16,7 @@
             30-45 minutes.
         </dd>
 
-        <dt class="font-semibold text-lg pb-2">
+        <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
             <a class="text-blue-800 hover:text-blue-500 underline" href="https://artofproductpodcast.com/">
                 The Art of Product Podcast
             </a>
@@ -153,7 +153,7 @@
                 Laravel News Podcast
             </a>
         </dt>
-        <dd class="pb-2">
+        <dd class="italic pb-2">
             A quick run through of new releases and packages for Laravel.
         </dd>
         <dd class="pb-2">
