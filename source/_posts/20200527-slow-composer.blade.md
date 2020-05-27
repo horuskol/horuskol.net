@@ -5,7 +5,7 @@ author: Stuart Jones
 date: 2020-05-27
 section: post
 tags: [php]
-image: https://horuskol.net/assets/images/posts-20200522-slow-composer-tortoise.jpg
+image: https://horuskol.net/assets/images/posts/20200522-slow-composer-tortoise.jpg
 description: Composer taking a while to install/update? It's either time to go and make a coffee, or try these tips to speed it up again.
 ---
 
