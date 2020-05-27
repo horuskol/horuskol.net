@@ -19,7 +19,7 @@
 }
 
 .markdown code {
-  @apply font-mono font-medium text-sm text-orange-600 bg-gray-800 p-1 pb-0 border-gray-500 border-r border-b rounded-sm whitespace-pre;
+  @apply inline-block font-mono font-medium text-sm text-orange-600 bg-gray-400 p-2 pb-0 pt-1 border-gray-500 border-r border-b rounded-sm whitespace-pre;
 }
 
 .markdown pre {
