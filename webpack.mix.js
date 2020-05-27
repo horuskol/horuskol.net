@@ -24,7 +24,4 @@ mix.options({
     .postCss('source/_assets/css/main.css', 'css/main.css')
     .js('source/_assets/js/main.js', 'js')
     .js('source/_assets/js/presentation.js', 'js')
-    .purgeCss({
-        folders: ['source']
-    })
     .version();
