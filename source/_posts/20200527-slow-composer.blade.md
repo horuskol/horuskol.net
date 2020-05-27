@@ -2,7 +2,7 @@
 extends: _layouts.post
 title: Some tips to help speed up Composer install/update
 author: Stuart Jones
-date: 2020-03-05
+date: 2020-05-27
 section: post
 tags: [php]
 image: https://horuskol.net/assets/images/posts-20200522-slow-composer-tortoise.jpg
@@ -10,8 +10,8 @@ description: Composer taking a while to install/update? It's either time to go a
 ---
 
 <figure>
-<img src="/assets/images/posts/20200522-slow-composer-tortoise-and-hare.jpg" alt="stone tortoise winning a race against a stone hare">
-<figcaption>slow and steady may win the race, but is it worth the wait?</figcaption>
+<img src="/assets/images/posts/20200522-slow-composer-tortoise-and-hare.jpg" alt="Stone tortoise winning a race against a stone hare">
+<figcaption>Slow and steady may win the race, but is it worth the wait?</figcaption>
 </figure>
 
 [Composer] has had a great impact on PHP development - while it wasn't the first package/dependency manager for PHP, it has become the mainstay since it was released 8 years ago. When used regularly, it can take away the pain of dealing with intersecting dependencies of dependencies, and do it pretty quickly.
@@ -30,20 +30,24 @@ Simple things first - Composer is updated fairly regularly, and these updates ca
 
 As projects get older, dependencies (hopefully) get updated. You might have started the project with `"laravel/framework": "^6.1"` in your `composer.json` file, but that was months ago, and the framework is currently at `v6.18.15`.
 
-When you do an update (or bring in a new package with require), Composer will first try to get the newest version of everything that meets the requirements in your `composer.json`. It then checks the dependencies for all of the packages you specify, and then checks the dependencies for everything they require. If there's a mismatch somewhere, then it resolves it by trying to find a set of versions that satisfies everything.
-
-By leaving your old version constraints in your composer.json file, you're potentially asking Composer to check on every version between now and then, of every package you've required into your project. Then it has to check on every version of each package they depend on.
-
-So, it's a good idea to update your constraints every once in a while. You can see what versions are currently installed with `composer info -D`, alternatively, some editors (such as PHPStorm) will display that information when you open the file for editing:
-
 <figure>
 <img src="/assets/images/posts/20200522-slow-composer-phpstorm-version.png" alt="composer.json file viewed using PHPStorm">
 <figcaption>Looks like I can bump the version constraint for Jigsaw</figcaption>
 </figure>
 
+By leaving your old version constraints in your composer.json file, you're potentially asking Composer to check on every version between now and then, of every package you've required into your project. Then it has to check on every version of each package they depend on.
+
+So, it's a good idea to update your constraints every once in a while. You can see what versions are currently installed with `composer info -D`, alternatively, some editors (such as PHPStorm) will display that information when you open the file for editing.
+
 ## Go nuclear
 
-Clear your cache, remove the vendor directory, and do a composer update.
+Clear your cache, remove the vendor directory and lockfile, and do a composer update.
+
+```
+composer cc
+rm -r composer.lock vendor
+composer update
+```
 
 ## Speed up the download
 
