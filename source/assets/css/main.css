@@ -31,13 +31,15 @@
 }
 
 .markdown code {
+  display: inline-block;
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-weight: 500;
   font-size: 0.875rem;
   color: #dd6b20;
-  background-color: #2d3748;
-  padding: 0.25rem;
+  background-color: #cbd5e0;
+  padding: 0.5rem;
   padding-bottom: 0;
+  padding-top: 0.25rem;
   border-color: #a0aec0;
   border-right-width: 1px;
   border-bottom-width: 1px;
