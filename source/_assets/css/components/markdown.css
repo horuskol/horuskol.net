@@ -53,12 +53,14 @@
 }
 
 .markdown figure {
-  @apply bg-blue-200 mb-3 ml-3 p-1 text-center shadow-xl;
+  @apply bg-blue-200 mb-3 p-1 text-center shadow-xl;
 }
 
-.markdown figure {
-  max-width: 50%;
-  float: right;
+@screen sm {
+  .markdown figure {
+    @apply float-right;
+    max-width: 50%;
+  }
 }
 
 .markdown figure.in-flow {
