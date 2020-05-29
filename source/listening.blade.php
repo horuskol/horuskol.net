@@ -5,7 +5,7 @@
 
     <dl class="pb-4 leading-normal">
         <dt class="font-semibold text-lg pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://apisyouwonthate.com/podcast">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://apisyouwonthate.com/podcast">
                 APIs you won't hate
             </a>
         </dt>
@@ -17,7 +17,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://artofproductpodcast.com/">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://artofproductpodcast.com/">
                 The Art of Product Podcast
             </a>
         </dt>
@@ -30,7 +30,19 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://basecodefieldguide.com/podcast/">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://www.thebritishhistorypodcast.com/">
+                The British History Podcast
+            </a>
+        </dt>
+        <dd class="italic pb-2">
+            The BHP is a chronological retelling of the history of Britain with a particular focus upon the lives of the people. You won’t find a dry recounting of dates and battles here, but instead you’ll learn about who these people were and how their desires, fears, and flaws shaped the scope of this island at the edge of the world.
+        </dd>
+        <dd class="pb-2">
+            20-30 minutes.
+        </dd>
+
+        <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://basecodefieldguide.com/podcast/">
                 The BaseCode Podcast
             </a>
         </dt>
@@ -42,7 +54,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://www.bikeshed.fm/">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://www.bikeshed.fm/">
                 The Bike Shed
             </a>
         </dt>
@@ -56,7 +68,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://www.brightandearlypodcast.com/">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://www.brightandearlypodcast.com/">
                 Bright & Early
             </a>
         </dt>
@@ -72,7 +84,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://saas.transistor.fm/">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://saas.transistor.fm/">
                 Build Your SaaS
             </a>
         </dt>
@@ -87,7 +99,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://pod.link/thecsspodcast">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://pod.link/thecsspodcast">
                 The CSS Podcast
             </a>
         </dt>
@@ -99,7 +111,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://www.stitcher.com/podcast/anchor-podcasts/extremities">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://www.stitcher.com/podcast/anchor-podcasts/extremities">
                 Extremities
             </a>
         </dt>
@@ -111,7 +123,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://www.founderquestpodcast.com/">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://www.founderquestpodcast.com/">
                 Founder Quest
             </a>
         </dt>
@@ -123,7 +135,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="http://www.fullstackradio.com/">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="http://www.fullstackradio.com/">
                 Full Stack Radio
             </a>
         </dt>
@@ -137,7 +149,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://www.indiehackers.com/podcast">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://www.indiehackers.com/podcast">
                 The Indie Hackers Podcast
             </a>
         </dt>
@@ -149,7 +161,19 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://laravel-news.com/category/podcast">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://laravelpodcast.com/">
+                Laravel News Podcast
+            </a>
+        </dt>
+        <dd class="italic pb-2">
+            The Laravel Podcast brings you Laravel and PHP development news and discussion. Season 4 consists of guest interviews by Matt Stauffer talking about a new topic in the Laravel community for each episode.
+        </dd>
+        <dd class="pb-2">
+            45-60 minutes.
+        </dd>
+
+        <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://laravel-news.com/category/podcast">
                 Laravel News Podcast
             </a>
         </dt>
@@ -160,21 +184,8 @@
             30-45 minutes.
         </dd>
 
-
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://noplanstomerge.simplecast.com/">
-                No Plans to Merge
-            </a>
-        </dt>
-        <dd class="italic pb-2">
-            Real life code talk between two working developers.
-        </dd>
-        <dd class="pb-2">
-            60 minutes.
-        </dd>
-
-        <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://www.northmeetssouth.audio/">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://www.northmeetssouth.audio/">
                 North Meets South
             </a>
         </dt>
@@ -186,7 +197,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://outofbeta.fm/">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://outofbeta.fm/">
                 Out of Beta
             </a>
         </dt>
@@ -198,7 +209,7 @@
         </dt>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://www.stitcher.com/podcast/earwolf/seth-godins-startup-school">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://www.stitcher.com/podcast/earwolf/seth-godins-startup-school">
                 Seth Godin's Startup School
             </a>
         </dt>
@@ -210,7 +221,7 @@
         </dt>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://www.stitcher.com/podcast/brian-rhea-benedikt-deicke/slow-steady">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://www.stitcher.com/podcast/brian-rhea-benedikt-deicke/slow-steady">
                 Slow & Steady
             </a>
         </dt>
@@ -224,7 +235,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://softskills.audio/">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://softskills.audio/">
                 Soft Skills Engineering
             </a>
         </dt>
@@ -236,7 +247,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://www.abc.net.au/radionational/programs/sum-of-all-parts/">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://www.abc.net.au/radionational/programs/sum-of-all-parts/">
                 Sum of All Parts
             </a>
         </dt>
@@ -251,7 +262,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://syntax.fm/">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://syntax.fm/">
                 Syntax.
             </a>
         </dt>
@@ -263,7 +274,7 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="https://testandcode.com/">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://testandcode.com/">
                 Test & Code
             </a>
         </dt>
@@ -276,7 +287,19 @@
         </dd>
 
         <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
-            <a class="text-blue-800 visited:text-purple-800 hover:text-blue-500 underline" href="http://thewestwingweekly.com/">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="https://twentypercenttime.simplecast.com/">
+                Twenty Percent Time
+            </a>
+        </dt>
+        <dd class="italic pb-2">
+            Twenty Percent Time is a podcast for programmers, designers, business owners, & more from the good folks at Tighten.
+        </dd>
+        <dd class="pb-2">
+            20-30 minutes.
+        </dd>
+
+        <dt class="font-semibold text-lg border-t border-gray-700 mt-4 pt-4 pb-2">
+            <a class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline" href="http://thewestwingweekly.com/">
                 The West Wing Weekly
             </a>
         </dt>

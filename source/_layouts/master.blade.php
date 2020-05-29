@@ -49,17 +49,17 @@
     <body class="border-blue-300 border-t-8 bg-gray-100 text-black">
         <div class="max-w-3xl ml-auto mr-auto">
             <header class="pb-4">
-                <h1 class="text-3xl mt-4 ml-5 md:ml-10"><a href="/" class="text-blue-800 hover:text-blue-500 underline">HorusKol</a></h1>
+                <h1 class="text-3xl mt-4 ml-5 md:ml-10"><a href="/" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">HorusKol</a></h1>
                 <h2 class="text-2xl mt-4 ml-5 md:ml-10 mr-25pc">Adventures and musings in the world of web development</h2>
             </header>
 
             <div style="border-radius: 3rem 100% 0% 0% / 100% 100% 0% 0%;" class="text-xl ml-3 mr-3 pt-2 pb-2 bg-blue-200">
                 <nav class="w-3/4">
                     <ul class="ml-5 sm:ml-10 p-0">
-                        <li class="inline-block mr-4"><a href="/" class="text-blue-800 hover:text-blue-500 underline">Blog</a></li>
-                        <li class="inline-block mr-4"><a href="/presentations" class="text-blue-800 hover:text-blue-500 underline">Presentations</a></li>
-                        <li class="inline-block mr-4"><a href="/about" class="text-blue-800 hover:text-blue-500 underline">About</a></li>
-                        <li class="inline-block mr-4"><a href="/listening" class="text-blue-800 hover:text-blue-500 underline">Listening</a></li>
+                        <li class="inline-block mr-4"><a href="/" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Blog</a></li>
+                        <li class="inline-block mr-4"><a href="/presentations" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Presentations</a></li>
+                        <li class="inline-block mr-4"><a href="/about" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">About</a></li>
+                        <li class="inline-block mr-4"><a href="/listening" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Listening</a></li>
                     </ul>
                 </nav>
             </div>
@@ -69,9 +69,9 @@
             </div>
 
             <footer style="border-radius: 0% 0% 4rem 100% / 0% 0% 100% 100%;" class="flex flex-wrap justify-end ml-3 mr-3 mb-8 pt-2 pb-2 bg-blue-200 text-right">
-                <a href="https://dev.to/horus_kol" class="mr-4 text-blue-800 hover:text-blue-500 underline social-icon dev-to">dev.to</a>
-                <a href="https://twitter.com/horus_kol" class="mr-4 text-blue-800 hover:text-blue-500 underline social-icon twitter">twitter</a>
-                <a href="https://www.linkedin.com/in/horuskol/" class="mr-4 text-blue-800 hover:text-blue-500 underline social-icon linkedin">linkedin</a>
+                <a href="https://dev.to/horus_kol" class="mr-4 text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline social-icon dev-to">dev.to</a>
+                <a href="https://twitter.com/horus_kol" class="mr-4 text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline social-icon twitter">twitter</a>
+                <a href="https://www.linkedin.com/in/horuskol/" class="mr-4 text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline social-icon linkedin">linkedin</a>
 
                 <p class="w-full pt-4 pr-8">
                     &copy; Stuart Jones

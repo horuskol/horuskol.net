@@ -49,8 +49,8 @@
 <body class="bg-grey-100 text-black">
     <nav class="bg-blue-200 p-2">
         <ul class="mr-5 sm:mr-10 p-0">
-            <li class="inline-block mr-4"><a href="/" class="text-blue-800 hover:text-blue-500 no-underline">HorusKol</a></li>
-            <li class="inline-block mr-4"><a href="/presentations" class="text-blue-800 hover:text-blue-500 no-underline">Presentations</a></li>
+            <li class="inline-block mr-4"><a href="/" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">HorusKol</a></li>
+            <li class="inline-block mr-4"><a href="/presentations" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Presentations</a></li>
         </ul>
     </nav>
 
