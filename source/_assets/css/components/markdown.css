@@ -3,7 +3,7 @@
 }
 
 .markdown h2 {
-  @apply font-semibold text-xl pt-8 pb-4 text-gray-900;
+  @apply clear-both font-semibold text-xl pt-8 pb-4 text-gray-900;
 }
 
 .markdown h3 {

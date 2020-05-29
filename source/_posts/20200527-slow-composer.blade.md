@@ -30,14 +30,22 @@ Simple things first - Composer is updated fairly regularly, and these updates ca
 
 As projects get older, dependencies (hopefully) get updated. You might have started the project with `"laravel/framework": "^6.1"` in your `composer.json` file, but that was months ago, and the framework is currently at `v6.18.15`.
 
+By leaving your old version constraints in your composer.json file, you're potentially asking Composer to check on every version between now and then, of every package you've required into your project. Then it has to check on every version of each package they depend on.
+
+So, it's a good idea to update your constraints every once in a while. 
+
+You can see what versions are currently installed with `composer info --direct`, while `composer outdated --direct` will let you know which packages have newer versions available.
+
+<figure class="in-flow">
+<img src="/assets/images/posts/20200522-slow-composer-outdated.png" alt="output from composer outdated in a terminal">
+</figure>
+
 <figure>
 <img src="/assets/images/posts/20200522-slow-composer-phpstorm-version.png" alt="composer.json file viewed using PHPStorm">
 <figcaption>Looks like I can bump the version constraint for Jigsaw</figcaption>
 </figure>
 
-By leaving your old version constraints in your composer.json file, you're potentially asking Composer to check on every version between now and then, of every package you've required into your project. Then it has to check on every version of each package they depend on.
-
-So, it's a good idea to update your constraints every once in a while. You can see what versions are currently installed with `composer info -D`, alternatively, some editors (such as PHPStorm) will display that information when you open the file for editing.
+Some code editors, such as PhpStorm, can also help identify outdated specifications in your `composer.json` file by showing the currently installed version alongside the current specification.
 
 ## Go nuclear
 
