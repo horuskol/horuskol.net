@@ -57,6 +57,7 @@
                 <nav class="w-3/4">
                     <ul class="ml-5 sm:ml-10 p-0">
                         <li class="inline-block mr-4"><a href="/" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Blog</a></li>
+                        <li class="inline-block mr-4"><a href="https://apps.horuskol.net" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Apps</a></li>
                         <li class="inline-block mr-4"><a href="/presentations" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Presentations</a></li>
                         <li class="inline-block mr-4"><a href="/about" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">About</a></li>
                         <li class="inline-block mr-4"><a href="/listening" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Listening</a></li>
