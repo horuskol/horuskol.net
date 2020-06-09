@@ -1,4 +1,4 @@
-@extends('_layouts.master', ['page' => (object) ['title' => 'Listening']])
+@extends('_layouts.html', ['page' => (object) ['title' => 'Listening']])
 
 @section('content')
     <h1 class="font-bold text-2xl pt-8 pb-4">What podcasts am I listening to?</h1>

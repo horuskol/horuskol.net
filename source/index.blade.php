@@ -3,7 +3,7 @@ pagination:
   collection: posts
   perPage: 10
 ---
-@extends('_layouts.master', ['page' => (object) ['title' => 'Blog']])
+@extends('_layouts.html', ['page' => (object) ['title' => 'Blog']])
 
 @section('content')
     @foreach ($pagination->items as $post)

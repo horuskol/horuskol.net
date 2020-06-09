@@ -1,4 +1,4 @@
-@extends('_layouts.master')
+@extends('_layouts.html')
 
 @section('meta')
     <meta name="twitter:card" content="summary">

@@ -1,4 +1,4 @@
-@extends('_layouts.master')
+@extends('_layouts.html')
 
 @section('content')
     @foreach ($page->getPostsByTag($posts) as $post)

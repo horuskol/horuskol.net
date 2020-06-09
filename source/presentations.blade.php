@@ -1,4 +1,4 @@
-@extends('_layouts.master', ['page' => (object) ['title' => 'Presentations']])
+@extends('_layouts.html', ['page' => (object) ['title' => 'Presentations']])
 
 @section('content')
     @foreach ($presentations->filter(function($value, $key) { return $value->summary; }) as $presentation)
