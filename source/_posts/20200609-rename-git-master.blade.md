@@ -5,7 +5,7 @@ author: Stuart Jones
 date: 2020-06-09
 section: post
 tags: [git, development]
-image: https://horuskol.net/assets/images/posts/20200522-slow-composer-tortoise.jpg
+image: https://horuskol.net/assets/images/horuskol-ring.png
 description: Git lets you rename your branches, but renaming your master branch can be tricky.
 canonical_url: https://dev.to/horus_kol/renaming-your-master-branch-2a37
 ---
