@@ -65,9 +65,15 @@ Our objective is to enable the user to move the green element from the left pare
 
 ## How to pick up and make a move
 
-We want the same interaction for the user whether they're using a mouse or using a touch device. So, we're going to do programme in tandem.
+We want the same interaction for the user whether they're using a mouse or using a touch device. So, we're going to programme both functionalities in tandem. This is helped by the fact that there are analogous events between both APIs:
 
-First up, we want to be able to 'pick up' the element. This is done by listening for `mousedown` and `touchstart` events on the movable element.
+* `touchstart` is equivalent to `mousedown`
+* `touchend` is equivalent to `mouseup`
+* `touchmove` is equivalent to `mousemove`
+
+There's a couple of caveats. Touch has an additional `touchcancel` event which is triggered when the browsers decides something should interrupt the touch behaviour. Also, the touch events carry additional information because you can have multiple touchpoints, whereas the Mouse API only allows for a single mouse pointer.
+
+All that consider, our first step is to allow users to 'pick up' the element. This is done by listening for `mousedown` and `touchstart` events on the movable element.
 
 ```html
 <div id="movable-element" onmousedown="pickup(event)" ontouchstart="pickup(event)"></div>
@@ -137,18 +143,20 @@ The tricky bit here is that `mousemove` and `touchmove` pass slightly different 
 ```javascript
 function move(event) {
     if (moving) {
-        if (event.pageX) {
+        if (event.clientX) {
             // mousemove
-            moving.style.left = event.pageX - moving.clientWidth/2;
-            moving.style.top = event.pageY - moving.clientHeight/2;
+            moving.style.left = event.clientX - moving.clientWidth/2;
+            moving.style.top = event.clientY - moving.clientHeight/2;
         } else {
             // touchmove - assuming a single touchpoint
-            moving.style.left = event.changedTouches[0].pageX - moving.clientWidth/2;
-            moving.style.top = event.changedTouches[0].pageY - moving.clientHeight/2;
+            moving.style.left = event.changedTouches[0].clientX - moving.clientWidth/2;
+            moving.style.top = event.changedTouches[0].clientY - moving.clientHeight/2;
         }
     }
 }
 ```
+
+We use `clientX` and `clientY` here to account for the page being scrolled. The element is being positioned relative to the window's left and top edges, so we want to know where our mouse/finger is relative to the window's top-left corner.
 
 Now we have our element tracking our mouse/finger movements, but there a couple more problems now:
 
@@ -279,10 +287,10 @@ function drop(event) {
     if (moving) {
         if (event.currentTarget.tagName !== 'HTML') {
             let target = null;
-            if (event.pageX) {
-                target = document.elementFromPoint(event.pageX, event.pageY);
+            if (event.clientX) {
+                target = document.elementFromPoint(event.clientX, event.clientY);
             } else {
-                target = document.elementFromPoint(event.changedTouches[0].pageX, event.changedTouches[0].pageY);
+                target = document.elementFromPoint(event.changedTouches[0].clientX, event.changedTouches[0].clientY);
             }
 
             target.appendChild(moving);
