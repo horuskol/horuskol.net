@@ -57,14 +57,14 @@
                 <h2 class="text-2xl mt-4 ml-5 md:ml-10 mr-25pc">Adventures and musings in the world of web development</h2>
             </header>
 
-            <div style="border-radius: 3rem 100% 0% 0% / 100% 100% 0% 0%;" class="text-xl ml-3 mr-3 pt-2 pb-2 bg-blue-200">
-                <nav class="w-3/4">
-                    <ul class="ml-5 sm:ml-10 p-0">
-                        <li class="inline-block mr-4"><a href="/" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Blog</a></li>
-                        <li class="inline-block mr-4"><a href="https://apps.horuskol.net" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Apps</a></li>
-                        <li class="inline-block mr-4"><a href="/presentations" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Presentations</a></li>
-                        <li class="inline-block mr-4"><a href="/about" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">About</a></li>
-                        <li class="inline-block mr-4"><a href="/listening" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Listening</a></li>
+            <div class="text-xl ml-3 mr-3 pt-2 pb-2 bg-blue-200">
+                <nav>
+                    <ul class="flex flex-wrap justify-evenly p-0">
+                        <li><a href="/" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Blog</a></li>
+                        <li><a href="https://apps.horuskol.net" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Apps</a></li>
+                        <li><a href="/presentations" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Presentations</a></li>
+                        <li><a href="/about" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">About</a></li>
+                        <li><a href="/listening" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Listening</a></li>
                     </ul>
                 </nav>
             </div>
