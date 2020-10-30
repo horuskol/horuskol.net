@@ -8,21 +8,21 @@
         "watch": "npm run local -- --watch"
     },
     "devDependencies": {
-        "browser-sync": "^2.26.12",
+        "browser-sync": "^2.26.13",
         "browser-sync-webpack-plugin": "^2.2.2",
-        "cross-env": "^6.0.3",
+        "cross-env": "^7.0.2",
         "hasbin": "^1.2.3",
-        "laravel-mix": "^5.0.4",
-        "laravel-mix-purgecss": "^4.2.0",
+        "laravel-mix": "^5.0.7",
+        "laravel-mix-purgecss": "^5.0.0",
         "node-cmd": "^3.0.0",
         "on-build-webpack": "^0.1.0",
-        "postcss-import": "^12.0.1",
-        "tailwindcss": "^1.6.2",
-        "vue-template-compiler": "^2.6.11",
+        "postcss-import": "^13.0.0",
+        "tailwindcss": "^1.9.6",
+        "vue-template-compiler": "^2.6.12",
         "webpack-watch": "^0.2.0",
-        "yargs": "^15.4.1"
+        "yargs": "^16.1.0"
     },
     "dependencies": {
-        "axios": "^0.19.2"
+        "axios": "^0.21.0"
     }
 }
