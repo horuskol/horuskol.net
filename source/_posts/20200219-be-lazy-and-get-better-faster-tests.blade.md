@@ -9,6 +9,11 @@ image: https://horuskol.net/assets/images/posts/20200219-lazy.jpg
 description: A quick look at how Laravel's database factories help with simpler tests, and how being lazy can speed up your tests.
 ---
 
+<aside class="border border-red-700 text-red-700 bg-red-200 p-2 mb-4">
+    <p>Time moves on for us all, and as new versions of tools and libraries are released, some information gets out of date.</p>
+    <p class="mt-2">Please read <a href="/blog/2020-11-12/laravel-8-database-factories-for-even-better-testing/" class="text-blue-700 visited:text-purple-700 hover:text-indigo-500 underline">Laravel 8 database factories for even better testing</a> for an up-to-date look at factories.</p>
+</aside>
+
 Automated tests are awesome. Having repeatable tests on your codebase to warn you if anything trippy has happened because of changes you've been making, and thereby helping to preventing the release of buggy code, is a lifesaver. They're also a bit of a pain sometimes, especially when testing code relying on a framework, since you sometimes need  to bootstrap that framework as part of your tests.
 
 When you're dealing with testing database interactions, you can experience even more pain. Not only do you have to  restore state between each test, you also have to insert test data for many tests, which slows down tests and you can end up with a lot of setup prior to your actual test and assertions.
